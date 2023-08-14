@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="595" y="277"/>
         </scene>
-        <!--MyPageEditViewController-->
+        <!--SearchViewController-->
         <scene sceneID="YEN-4m-H5i">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MyPageEditViewController" storyboardName="MyPageEdit" referencedIdentifier="MyPageEditViewController" id="iuL-j9-jTe" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="SearchViewController" storyboardName="Search" referencedIdentifier="SearchViewController" id="iuL-j9-jTe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="9gY-jI-Hlh"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f60-g1-FJZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
