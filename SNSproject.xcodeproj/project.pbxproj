@@ -17,6 +17,7 @@
 		1D8B89D62A89C3C600F11510 /* AddPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D52A89C3C600F11510 /* AddPost.storyboard */; };
 		1D8B89D82A89C3D900F11510 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D72A89C3D900F11510 /* MyPage.storyboard */; };
 		1D8B89DA2A89C3E800F11510 /* MyPageEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D92A89C3E800F11510 /* MyPageEdit.storyboard */; };
+		1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1D8B89D52A89C3C600F11510 /* AddPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPost.storyboard; sourceTree = "<group>"; };
 		1D8B89D72A89C3D900F11510 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		1D8B89D92A89C3E800F11510 /* MyPageEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPageEdit.storyboard; sourceTree = "<group>"; };
+		1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				1D8B89D32A89C3AC00F11510 /* Home.storyboard */,
 				1D8B89D52A89C3C600F11510 /* AddPost.storyboard */,
 				1D8B89D72A89C3D900F11510 /* MyPage.storyboard */,
+				1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */,
 				1D8B89D92A89C3E800F11510 /* MyPageEdit.storyboard */,
 				1D8B89BF2A89C11600F11510 /* AppDelegate.swift */,
 				1D8B89C12A89C11600F11510 /* SceneDelegate.swift */,
@@ -157,6 +160,7 @@
 				1D8B89C42A89C11600F11510 /* ViewController.swift in Sources */,
 				1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */,
 				1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */,
+				1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
