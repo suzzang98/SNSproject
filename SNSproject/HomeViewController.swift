@@ -20,6 +20,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         table.delegate = self
         table.dataSource = self
         
+        models.append(InstagramPost(numberOfLikes: 47, username: "su_hyeon_47", userImageName: "suhyeon", postImageName: "post_1"))
+        models.append(InstagramPost(numberOfLikes: 74, username: "ga_g_yeom__", userImageName: "gagyeom", postImageName: "post_2"))
+        models.append(InstagramPost(numberOfLikes: 63, username: "woo8jun2", userImageName: "woojun", postImageName: "post_3"))
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -36,13 +39,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 500
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
     
-    
 }
-
 
 struct InstagramPost{
     let numberOfLikes: Int
