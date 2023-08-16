@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G8D-ls-pfh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9VH-uR-mOy">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="49S-mB-Paf">
             <objects>
-                <viewController id="5Vo-oA-IDk" customClass="ViewController" customModule="sssasdasd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Vo-oA-IDk" customClass="ViewController" customModule="SNSproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ohP-MF-d0y">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -391,13 +392,13 @@
         <!--Profile EditVC-->
         <scene sceneID="1Hr-Ba-BBQ">
             <objects>
-                <viewController id="9VH-uR-mOy" customClass="ProfileEditVC" customModule="sssasdasd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileEditVC" id="9VH-uR-mOy" customClass="ProfileEditVC" customModule="SNSproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQO-en-g1J">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtJ-LH-zHz" userLabel="Upper Container View">
-                                <rect key="frame" x="0.0" y="103" width="393" height="180"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="180"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat1" translatesAutoresizingMaskIntoConstraints="NO" id="MbD-le-6df">
                                         <rect key="frame" x="90" y="15" width="90" height="90"/>
@@ -412,7 +413,7 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Edit picture of avatar"/>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhO-v7-AhO">
-                                        <rect key="frame" x="0.0" y="179.66666666666669" width="393" height="0.33333333333334281"/>
+                                        <rect key="frame" x="0.0" y="179.66666666666666" width="393" height="0.33333333333334281"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="0.5" id="toW-G7-TTU"/>
@@ -444,7 +445,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N3U-uV-l93">
-                                <rect key="frame" x="0.0" y="283" width="393" height="569"/>
+                                <rect key="frame" x="0.0" y="239" width="393" height="613"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -471,24 +472,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDI-uL-Bq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1248.0916030534352" y="-27.464788732394368"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4ba-Yy-03b">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G8D-ls-pfh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pH7-MY-RzC">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9VH-uR-mOy" kind="relationship" relationship="rootViewController" id="J3x-fW-P4b"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tA5-wl-aiL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="321.37404580152668" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>

@@ -15,7 +15,8 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var bio: UITextView!
     
-
+    @IBOutlet var collectionView: UICollectionView!
+    
     
     // 게시물, 팔로워, 팔로잉 숫자
     @IBOutlet weak var postNum: UILabel!
@@ -27,6 +28,10 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.register(MyPageCollectionViewCell1.self, forCellWithReuseIdentifier: MyPageCollectionViewCell1.identifier)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
         // 사용자 이름, 프로필 사진, 유저 네임, 자기소개 설정
         myPageProfileImage.image = UIImage(named: sampleUser.profilePhoto)
         name.text = sampleUser.name
@@ -53,6 +58,13 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     // 셀 클릭하면 내 포스트 나열되어있는 화면으로 넘어가는 기능
     
     
+    @IBAction func editProfileTapped(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "ProfileSB", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "ProfileEditVC")
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
     
     
@@ -62,9 +74,9 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     // 어떤 셀을 보여줄 것인지
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = MyPageCollectionViewCell()
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyPageCollectionViewCell", for: indexPath) as! MyPageCollectionViewCell
-        cell.cellImage.image = UIImage(named: reversedMyPost[indexPath.row].photo) ?? UIImage()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyPageCollectionViewCell1.identifier, for: indexPath) as! MyPageCollectionViewCell1
+        print("Cell has been called")
+        cell.imageView.image = UIImage(named: reversedMyPost[indexPath.row].photo) ?? UIImage()
         return cell
     }
     
@@ -78,6 +90,7 @@ extension MyPageViewController: UICollectionViewDelegateFlowLayout{
 
             let interval:CGFloat = 3
             let width: CGFloat = ( UIScreen.main.bounds.width - interval * 2 ) / 3
+        
             return CGSize(width: width , height: width )
     }
 

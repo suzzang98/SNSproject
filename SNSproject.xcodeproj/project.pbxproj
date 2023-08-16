@@ -33,6 +33,7 @@
 		D6804F5F2A8CBFE300F23E15 /* SettingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F5C2A8CBFE200F23E15 /* SettingText.swift */; };
 		D6804F602A8CBFE300F23E15 /* UserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F5D2A8CBFE300F23E15 /* UserInfoRepository.swift */; };
 		D6804F612A8CBFE300F23E15 /* Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F5E2A8CBFE300F23E15 /* Edit.swift */; };
+		D6804F632A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F622A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		D6804F5C2A8CBFE200F23E15 /* SettingText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingText.swift; sourceTree = "<group>"; };
 		D6804F5D2A8CBFE300F23E15 /* UserInfoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRepository.swift; sourceTree = "<group>"; };
 		D6804F5E2A8CBFE300F23E15 /* Edit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edit.swift; sourceTree = "<group>"; };
+		D6804F622A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCollectionViewCell1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				1D8B89CD2A89C11700F11510 /* Info.plist */,
 				1D5C238A2A8CC3D7008E4ED3 /* SamplePost.swift */,
 				D6804F1C2A8B1BA900F23E15 /* woojun */,
+				D6804F622A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift */,
 			);
 			path = SNSproject;
 			sourceTree = "<group>";
@@ -134,8 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				D6804F412A8CBEF400F23E15 /* UserNameSB.storyboard */,
-				D6804F422A8CBEF400F23E15 /* NameEditSB.storyboard */,
 				D6804F432A8CBEF400F23E15 /* ProfileSB.storyboard */,
+				D6804F422A8CBEF400F23E15 /* NameEditSB.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				D6804F522A8CBF1000F23E15 /* User.swift in Sources */,
 				D6804F5F2A8CBFE300F23E15 /* SettingText.swift in Sources */,
 				D6804F612A8CBFE300F23E15 /* Edit.swift in Sources */,
+				D6804F632A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift in Sources */,
 				1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */,
 				D6804F532A8CBF1000F23E15 /* Post.swift in Sources */,
 				1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */,

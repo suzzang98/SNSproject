@@ -7,8 +7,8 @@
 
 import UIKit
 
-class MyPageCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var cellImage: UIImageView!
-    
-    
-}
+//class MyPageCollectionViewCell: UICollectionViewCell {
+//    @IBOutlet weak var cellImage: UIImageView!
+//
+//
+//}

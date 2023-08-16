@@ -12,6 +12,11 @@ var myPost: [Post] = [
     Post(id: 1, photo: "samplePhoto2", content: "샘플 사진2 입니다.", uploadDate: Date()),
     Post(id: 2, photo: "samplePhoto3", content: "샘플 사진3 입니다.", uploadDate: Date()),
     Post(id: 2, photo: "samplePhoto3", content: "샘플 사진3 입니다.", uploadDate: Date()),
+    Post(id: 2, photo: "samplePhoto3", content: "샘플 사진3 입니다.", uploadDate: Date()),
+    Post(id: 0, photo: "samplePhoto1", content: "샘플 사진1 입니다.", uploadDate: Date()),
+    Post(id: 1, photo: "samplePhoto2", content: "샘플 사진2 입니다.", uploadDate: Date()),
+    Post(id: 2, photo: "samplePhoto3", content: "샘플 사진3 입니다.", uploadDate: Date()),
+    Post(id: 2, photo: "samplePhoto3", content: "샘플 사진3 입니다.", uploadDate: Date()),
     Post(id: 2, photo: "samplePhoto3", content: "샘플 사진3 입니다.", uploadDate: Date())
 ]
 

@@ -62,6 +62,7 @@ class ProfileEditVC: UIViewController {
     }
 
     private func configureTableView() {
+        tableView.isScrollEnabled = false
         tableView.delegate = self
         tableView.dataSource = self
         
