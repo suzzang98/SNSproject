@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1D5C23592A8AFB3E008E4ED3 /* MyPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C23582A8AFB3E008E4ED3 /* MyPageCollectionViewCell.swift */; };
-		1D5C235B2A8B3D75008E4ED3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C235A2A8B3D75008E4ED3 /* Post.swift */; };
-		1D5C235D2A8B4608008E4ED3 /* SamplePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C235C2A8B4608008E4ED3 /* SamplePost.swift */; };
-		1D5C23612A8B6252008E4ED3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C23602A8B6252008E4ED3 /* User.swift */; };
 		1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89BF2A89C11600F11510 /* AppDelegate.swift */; };
 		1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89C12A89C11600F11510 /* SceneDelegate.swift */; };
 		1D8B89C42A89C11600F11510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89C32A89C11600F11510 /* ViewController.swift */; };
@@ -40,9 +37,6 @@
 
 /* Begin PBXFileReference section */
 		1D5C23582A8AFB3E008E4ED3 /* MyPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCollectionViewCell.swift; sourceTree = "<group>"; };
-		1D5C235A2A8B3D75008E4ED3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		1D5C235C2A8B4608008E4ED3 /* SamplePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePost.swift; sourceTree = "<group>"; };
-		1D5C23602A8B6252008E4ED3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1D8B89BC2A89C11600F11510 /* SNSproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8B89BF2A89C11600F11510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8B89C12A89C11600F11510 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,16 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D5C23622A8CC0EE008E4ED3 /* Post */ = {
-			isa = PBXGroup;
-			children = (
-				1D5C235A2A8B3D75008E4ED3 /* Post.swift */,
-				1D5C235C2A8B4608008E4ED3 /* SamplePost.swift */,
-				1D5C23602A8B6252008E4ED3 /* User.swift */,
-			);
-			path = Post;
-			sourceTree = "<group>";
-		};
 		1D8B89B32A89C11600F11510 = {
 			isa = PBXGroup;
 			children = (
@@ -274,8 +258,6 @@
 				1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */,
 				D6804F532A8CBF1000F23E15 /* Post.swift in Sources */,
 				1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */,
-				1D5C235B2A8B3D75008E4ED3 /* Post.swift in Sources */,
-				1D5C23612A8B6252008E4ED3 /* User.swift in Sources */,
 				1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */,
 
 				D6804F602A8CBFE300F23E15 /* UserInfoRepository.swift in Sources */,
