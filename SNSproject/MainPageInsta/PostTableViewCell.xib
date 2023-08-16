@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostTableViewCell" rowHeight="693" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="SNSproject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="693"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="693"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZF-8i-kUv" userLabel="TopContainerView">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oz8-4c-OAj">
+                                <rect key="frame" x="60" y="40" width="200" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="post_1" translatesAutoresizingMaskIntoConstraints="NO" id="IAQ-lU-8Ve">
+                                <rect key="frame" x="10" y="40" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="ak6-W5-0nz"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yLp-12-Er2">
+                        <rect key="frame" x="0.0" y="100" width="362" height="300"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="300" id="7dW-9Q-YvC"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdJ-ws-YEU" userLabel="BottomContainerView">
+                        <rect key="frame" x="0.0" y="400" width="362" height="293"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PqP-A0-qQ3" userLabel="ButtonView">
+                                <rect key="frame" x="10" y="0.0" width="200" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoK-zI-v82" userLabel="heartButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="heart.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldM-1u-Uud">
+                                        <rect key="frame" x="32" y="0.0" width="40" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="message" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5u-z6-yT0">
+                                        <rect key="frame" x="12" y="31" width="322" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfy-H1-Yod">
+                                        <rect key="frame" x="30" y="44.666666666666686" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmU-bd-6fN">
+                                        <rect key="frame" x="64" y="-1" width="40" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="arrowshape.turn.up.left" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVK-pb-1yT" userLabel="heartButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="heart" catalog="system"/>
+                                        <connections>
+                                            <action selector="pushLike:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xmx-yP-VoF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Dfy-H1-Yod" firstAttribute="leading" secondItem="PqP-A0-qQ3" secondAttribute="leading" constant="30" id="Ee1-H9-0er"/>
+                                    <constraint firstItem="Dfy-H1-Yod" firstAttribute="top" secondItem="PqP-A0-qQ3" secondAttribute="top" constant="44.5" id="QgL-ZS-Ofq"/>
+                                    <constraint firstAttribute="width" constant="200" id="jA1-hW-Ipk"/>
+                                    <constraint firstAttribute="height" constant="60" id="kzf-WC-qqn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJm-Cz-x8n">
+                                <rect key="frame" x="22" y="70" width="31" height="14.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bJm-Cz-x8n" firstAttribute="top" secondItem="PqP-A0-qQ3" secondAttribute="bottom" constant="10" id="4mc-th-nbR"/>
+                            <constraint firstItem="PqP-A0-qQ3" firstAttribute="leading" secondItem="EdJ-ws-YEU" secondAttribute="leading" constant="10" id="HZ8-yt-jUu"/>
+                            <constraint firstItem="bJm-Cz-x8n" firstAttribute="leading" secondItem="EdJ-ws-YEU" secondAttribute="leading" constant="22" id="Z57-kj-LfC"/>
+                            <constraint firstItem="PqP-A0-qQ3" firstAttribute="top" secondItem="EdJ-ws-YEU" secondAttribute="top" id="r3a-6B-N1T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="EdJ-ws-YEU" secondAttribute="trailing" id="0d1-JU-DE2"/>
+                    <constraint firstItem="qZF-8i-kUv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0ee-MH-ezH"/>
+                    <constraint firstAttribute="trailing" secondItem="yLp-12-Er2" secondAttribute="trailing" id="3zx-iO-hiC"/>
+                    <constraint firstAttribute="trailing" secondItem="qZF-8i-kUv" secondAttribute="trailing" id="7b3-mI-VtI"/>
+                    <constraint firstItem="EdJ-ws-YEU" firstAttribute="top" secondItem="yLp-12-Er2" secondAttribute="bottom" id="R5Y-hh-ZE2"/>
+                    <constraint firstItem="yLp-12-Er2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cFH-Ou-u9s"/>
+                    <constraint firstItem="qZF-8i-kUv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="czb-23-uMO"/>
+                    <constraint firstAttribute="bottom" secondItem="EdJ-ws-YEU" secondAttribute="bottom" id="kzp-yy-gdy"/>
+                    <constraint firstItem="EdJ-ws-YEU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="p8J-VD-TlV"/>
+                    <constraint firstItem="yLp-12-Er2" firstAttribute="top" secondItem="qZF-8i-kUv" secondAttribute="bottom" id="tyJ-bN-OhU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="likesChange" destination="FoK-zI-v82" id="JpI-5K-5vr"/>
+                <outlet property="likesLabel" destination="V5u-z6-yT0" id="ber-Ji-Iqh"/>
+                <outlet property="postImageView" destination="yLp-12-Er2" id="d9P-Uh-Adh"/>
+                <outlet property="posting" destination="bJm-Cz-x8n" id="ebm-Bi-zSm"/>
+                <outlet property="userImageView" destination="IAQ-lU-8Ve" id="Qum-hc-Ibn"/>
+                <outlet property="usernameLabel" destination="oz8-4c-OAj" id="Inr-7m-v71"/>
+            </connections>
+            <point key="canvasLocation" x="173.02325581395348" y="188.94849785407726"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.turn.up.left" catalog="system" width="128" height="104"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="message" catalog="system" width="128" height="116"/>
+        <image name="post_1" width="3024" height="4032"/>
+    </resources>
+</document>

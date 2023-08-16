@@ -53,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07E35D752A8CBDE400FD7347 /* MainPageInsta */ = {
+			isa = PBXGroup;
+			children = (
+				07E35D6D2A8A0CEE00FD7347 /* PostTableViewCell.swift */,
+				07E35D6E2A8A0CEE00FD7347 /* PostTableViewCell.xib */,
+				1D8B89D32A89C3AC00F11510 /* Home.storyboard */,
+				07E35D712A8A0D2600FD7347 /* HomeViewController.swift */,
+			);
+			path = MainPageInsta;
+			sourceTree = "<group>";
+		};
 		1D8B89B32A89C11600F11510 = {
 			isa = PBXGroup;
 			children = (
@@ -80,10 +91,7 @@
 				1D8B89BF2A89C11600F11510 /* AppDelegate.swift */,
 				1D8B89C12A89C11600F11510 /* SceneDelegate.swift */,
 				1D8B89C32A89C11600F11510 /* ViewController.swift */,
-				1D8B89D32A89C3AC00F11510 /* Home.storyboard */,
-				07E35D712A8A0D2600FD7347 /* HomeViewController.swift */,
-				07E35D6D2A8A0CEE00FD7347 /* PostTableViewCell.swift */,
-				07E35D6E2A8A0CEE00FD7347 /* PostTableViewCell.xib */,
+				07E35D752A8CBDE400FD7347 /* MainPageInsta */,
 				1D8B89C82A89C11700F11510 /* Assets.xcassets */,
 				1D8B89CA2A89C11700F11510 /* LaunchScreen.storyboard */,
 				1D8B89CD2A89C11700F11510 /* Info.plist */,
