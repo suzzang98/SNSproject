@@ -183,14 +183,8 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <scrollView key="backgroundView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="ufY-zf-aJc">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="395"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <viewLayoutGuide key="contentLayoutGuide" id="JVl-mz-j9P"/>
-                                    <viewLayoutGuide key="frameLayoutGuide" id="4mp-jV-K2Z"/>
-                                </scrollView>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="myPageCell" reuseIdentifier="MyPageCollectionViewCell" id="Rqc-P4-vHt" customClass="MyPageCollectionViewCell" customModule="SNSproject" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MyPageCollectionViewCell" reuseIdentifier="MyPageCollectionViewCell" id="Rqc-P4-vHt" customClass="MyPageCollectionViewCell" customModule="SNSproject">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hRI-Bl-24q">
@@ -214,10 +208,6 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="RbA-dF-IlC"/>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="nZM-7l-XFh"/>
-                                </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZb-LX-gXe" userLabel="buttons">
                                 <rect key="frame" x="0.0" y="304" width="393" height="70"/>

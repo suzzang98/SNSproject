@@ -14,8 +14,8 @@ struct Post {
     var content: String // 내용
     var uploadDate: Date // 날짜
     
-    var isLiked: Bool
-    var numberOfLikes: Int
+    var isLiked: Bool = false
+    var numberOfLikes: Int = 0
     
     
 //    let numberOfLikes: Int

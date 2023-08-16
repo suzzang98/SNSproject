@@ -12,7 +12,7 @@ class ProfileEditVC: UIViewController {
 
    
     
-    var userInfoRepository = UserInfoRepository(user: User(name: "Zigo", userName: "Zigo414")) {
+    var userInfoRepository = UserInfoRepository.shared {
         didSet {
             tableView.reloadData()
         }

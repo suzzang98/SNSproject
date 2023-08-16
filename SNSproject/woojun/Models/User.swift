@@ -10,6 +10,7 @@ import Foundation
 struct User {
     
     var name: String
+    var profilePhoto: String = "default_profile"
     var userName: String
     var pronouns: String = ""
     var bio: String = ""

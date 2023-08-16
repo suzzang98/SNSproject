@@ -15,6 +15,8 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var bio: UITextView!
     
+
+    
     // 게시물, 팔로워, 팔로잉 숫자
     @IBOutlet weak var postNum: UILabel!
     @IBOutlet weak var followNum: UILabel!
@@ -25,9 +27,8 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // 사용자 이름, 프로필 사진, 유저 네임, 자기소개 설정
-        myPageProfileImage.image = UIImage(named: sampleUser.profilePhoto+".png")
+        myPageProfileImage.image = UIImage(named: sampleUser.profilePhoto)
         name.text = sampleUser.name
         userName.text = sampleUser.userName
         bio.text = sampleUser.bio
@@ -61,7 +62,8 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     // 어떤 셀을 보여줄 것인지
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyPageCollectionViewCell", for: indexPath) as! MyPageCollectionViewCell
+        let cell = MyPageCollectionViewCell()
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyPageCollectionViewCell", for: indexPath) as! MyPageCollectionViewCell
         cell.cellImage.image = UIImage(named: reversedMyPost[indexPath.row].photo) ?? UIImage()
         return cell
     }

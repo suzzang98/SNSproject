@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D5C23592A8AFB3E008E4ED3 /* MyPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C23582A8AFB3E008E4ED3 /* MyPageCollectionViewCell.swift */; };
+		1D5C238B2A8CC3D7008E4ED3 /* SamplePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C238A2A8CC3D7008E4ED3 /* SamplePost.swift */; };
 		1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89BF2A89C11600F11510 /* AppDelegate.swift */; };
 		1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89C12A89C11600F11510 /* SceneDelegate.swift */; };
 		1D8B89C42A89C11600F11510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89C32A89C11600F11510 /* ViewController.swift */; };
@@ -37,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1D5C23582A8AFB3E008E4ED3 /* MyPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D5C238A2A8CC3D7008E4ED3 /* SamplePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePost.swift; sourceTree = "<group>"; };
 		1D8B89BC2A89C11600F11510 /* SNSproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8B89BF2A89C11600F11510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8B89C12A89C11600F11510 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,8 +110,8 @@
 				1D8B89C82A89C11700F11510 /* Assets.xcassets */,
 				1D8B89CA2A89C11700F11510 /* LaunchScreen.storyboard */,
 				1D8B89CD2A89C11700F11510 /* Info.plist */,
+				1D5C238A2A8CC3D7008E4ED3 /* SamplePost.swift */,
 				D6804F1C2A8B1BA900F23E15 /* woojun */,
-
 			);
 			path = SNSproject;
 			sourceTree = "<group>";
@@ -249,6 +250,7 @@
 				D6804F4D2A8CBF0500F23E15 /* UserNameVC.swift in Sources */,
 				D6804F4C2A8CBF0500F23E15 /* ProfileEditVC.swift in Sources */,
 				D6804F4E2A8CBF0500F23E15 /* NameViewController.swift in Sources */,
+				1D5C238B2A8CC3D7008E4ED3 /* SamplePost.swift in Sources */,
 				D6804F592A8CBF2A00F23E15 /* LowerEditCell.swift in Sources */,
 				D6804F5B2A8CBF2A00F23E15 /* UpperEditCell.swift in Sources */,
 				1D8B89C42A89C11600F11510 /* ViewController.swift in Sources */,
@@ -259,10 +261,8 @@
 				D6804F532A8CBF1000F23E15 /* Post.swift in Sources */,
 				1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */,
 				1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */,
-
 				D6804F602A8CBFE300F23E15 /* UserInfoRepository.swift in Sources */,
 				D6804F5A2A8CBF2A00F23E15 /* MiddleEditCell.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
