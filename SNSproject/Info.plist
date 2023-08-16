@@ -21,5 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+    <key>NSCameraUsageDescription</key>
+    <string>카메라 사용을 허용해주세요.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>앨범 사용을 허용해주세요.</string>
+    <key>NSMicroPhoneUsageDescription</key>
+    <string>마이크 사용을 허용해주세요.</string>
 </dict>
 </plist>
