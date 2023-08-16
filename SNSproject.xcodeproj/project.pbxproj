@@ -18,6 +18,20 @@
 		1D8B89D82A89C3D900F11510 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D72A89C3D900F11510 /* MyPage.storyboard */; };
 		1D8B89DA2A89C3E800F11510 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D92A89C3E800F11510 /* Search.storyboard */; };
 		1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */; };
+		D6804F452A8CBEF400F23E15 /* UserNameSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6804F412A8CBEF400F23E15 /* UserNameSB.storyboard */; };
+		D6804F462A8CBEF400F23E15 /* NameEditSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6804F422A8CBEF400F23E15 /* NameEditSB.storyboard */; };
+		D6804F472A8CBEF400F23E15 /* ProfileSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6804F432A8CBEF400F23E15 /* ProfileSB.storyboard */; };
+		D6804F4C2A8CBF0500F23E15 /* ProfileEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F492A8CBF0500F23E15 /* ProfileEditVC.swift */; };
+		D6804F4D2A8CBF0500F23E15 /* UserNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F4A2A8CBF0500F23E15 /* UserNameVC.swift */; };
+		D6804F4E2A8CBF0500F23E15 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F4B2A8CBF0500F23E15 /* NameViewController.swift */; };
+		D6804F522A8CBF1000F23E15 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F502A8CBF1000F23E15 /* User.swift */; };
+		D6804F532A8CBF1000F23E15 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F512A8CBF1000F23E15 /* Post.swift */; };
+		D6804F592A8CBF2A00F23E15 /* LowerEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F562A8CBF2A00F23E15 /* LowerEditCell.swift */; };
+		D6804F5A2A8CBF2A00F23E15 /* MiddleEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F572A8CBF2A00F23E15 /* MiddleEditCell.swift */; };
+		D6804F5B2A8CBF2A00F23E15 /* UpperEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F582A8CBF2A00F23E15 /* UpperEditCell.swift */; };
+		D6804F5F2A8CBFE300F23E15 /* SettingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F5C2A8CBFE200F23E15 /* SettingText.swift */; };
+		D6804F602A8CBFE300F23E15 /* UserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F5D2A8CBFE300F23E15 /* UserInfoRepository.swift */; };
+		D6804F612A8CBFE300F23E15 /* Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F5E2A8CBFE300F23E15 /* Edit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +48,20 @@
 		1D8B89D72A89C3D900F11510 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		1D8B89D92A89C3E800F11510 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		D6804F412A8CBEF400F23E15 /* UserNameSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserNameSB.storyboard; sourceTree = "<group>"; };
+		D6804F422A8CBEF400F23E15 /* NameEditSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NameEditSB.storyboard; sourceTree = "<group>"; };
+		D6804F442A8CBEF400F23E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProfileSB.storyboard; sourceTree = "<group>"; };
+		D6804F492A8CBF0500F23E15 /* ProfileEditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditVC.swift; sourceTree = "<group>"; };
+		D6804F4A2A8CBF0500F23E15 /* UserNameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNameVC.swift; sourceTree = "<group>"; };
+		D6804F4B2A8CBF0500F23E15 /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		D6804F502A8CBF1000F23E15 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D6804F512A8CBF1000F23E15 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D6804F562A8CBF2A00F23E15 /* LowerEditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowerEditCell.swift; sourceTree = "<group>"; };
+		D6804F572A8CBF2A00F23E15 /* MiddleEditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleEditCell.swift; sourceTree = "<group>"; };
+		D6804F582A8CBF2A00F23E15 /* UpperEditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpperEditCell.swift; sourceTree = "<group>"; };
+		D6804F5C2A8CBFE200F23E15 /* SettingText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingText.swift; sourceTree = "<group>"; };
+		D6804F5D2A8CBFE300F23E15 /* UserInfoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRepository.swift; sourceTree = "<group>"; };
+		D6804F5E2A8CBFE300F23E15 /* Edit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +106,62 @@
 				1D8B89C82A89C11700F11510 /* Assets.xcassets */,
 				1D8B89CA2A89C11700F11510 /* LaunchScreen.storyboard */,
 				1D8B89CD2A89C11700F11510 /* Info.plist */,
+				D6804F1C2A8B1BA900F23E15 /* woojun */,
 			);
 			path = SNSproject;
+			sourceTree = "<group>";
+		};
+		D6804F1C2A8B1BA900F23E15 /* woojun */ = {
+			isa = PBXGroup;
+			children = (
+				D6804F5E2A8CBFE300F23E15 /* Edit.swift */,
+				D6804F5C2A8CBFE200F23E15 /* SettingText.swift */,
+				D6804F5D2A8CBFE300F23E15 /* UserInfoRepository.swift */,
+				D6804F552A8CBF2A00F23E15 /* Cells */,
+				D6804F4F2A8CBF1000F23E15 /* Models */,
+				D6804F482A8CBF0500F23E15 /* Controllers */,
+				D6804F402A8CBEF400F23E15 /* Storyboards */,
+			);
+			path = woojun;
+			sourceTree = "<group>";
+		};
+		D6804F402A8CBEF400F23E15 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D6804F412A8CBEF400F23E15 /* UserNameSB.storyboard */,
+				D6804F422A8CBEF400F23E15 /* NameEditSB.storyboard */,
+				D6804F432A8CBEF400F23E15 /* ProfileSB.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D6804F482A8CBF0500F23E15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6804F492A8CBF0500F23E15 /* ProfileEditVC.swift */,
+				D6804F4A2A8CBF0500F23E15 /* UserNameVC.swift */,
+				D6804F4B2A8CBF0500F23E15 /* NameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D6804F4F2A8CBF1000F23E15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6804F502A8CBF1000F23E15 /* User.swift */,
+				D6804F512A8CBF1000F23E15 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6804F552A8CBF2A00F23E15 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D6804F562A8CBF2A00F23E15 /* LowerEditCell.swift */,
+				D6804F572A8CBF2A00F23E15 /* MiddleEditCell.swift */,
+				D6804F582A8CBF2A00F23E15 /* UpperEditCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +223,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D8B89CC2A89C11700F11510 /* LaunchScreen.storyboard in Resources */,
+				D6804F452A8CBEF400F23E15 /* UserNameSB.storyboard in Resources */,
 				1D8B89D82A89C3D900F11510 /* MyPage.storyboard in Resources */,
 				1D8B89C92A89C11700F11510 /* Assets.xcassets in Resources */,
 				1D8B89D62A89C3C600F11510 /* AddPost.storyboard in Resources */,
+				D6804F472A8CBEF400F23E15 /* ProfileSB.storyboard in Resources */,
 				1D8B89C72A89C11600F11510 /* Main.storyboard in Resources */,
+				D6804F462A8CBEF400F23E15 /* NameEditSB.storyboard in Resources */,
 				1D8B89DA2A89C3E800F11510 /* Search.storyboard in Resources */,
 				1D8B89D42A89C3AC00F11510 /* Home.storyboard in Resources */,
 			);
@@ -157,10 +242,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6804F4D2A8CBF0500F23E15 /* UserNameVC.swift in Sources */,
+				D6804F4C2A8CBF0500F23E15 /* ProfileEditVC.swift in Sources */,
+				D6804F4E2A8CBF0500F23E15 /* NameViewController.swift in Sources */,
+				D6804F592A8CBF2A00F23E15 /* LowerEditCell.swift in Sources */,
+				D6804F5B2A8CBF2A00F23E15 /* UpperEditCell.swift in Sources */,
 				1D8B89C42A89C11600F11510 /* ViewController.swift in Sources */,
+				D6804F522A8CBF1000F23E15 /* User.swift in Sources */,
+				D6804F5F2A8CBFE300F23E15 /* SettingText.swift in Sources */,
+				D6804F612A8CBFE300F23E15 /* Edit.swift in Sources */,
 				1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */,
+				D6804F532A8CBF1000F23E15 /* Post.swift in Sources */,
 				1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */,
 				1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */,
+				D6804F602A8CBFE300F23E15 /* UserInfoRepository.swift in Sources */,
+				D6804F5A2A8CBF2A00F23E15 /* MiddleEditCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +277,14 @@
 				1D8B89CB2A89C11700F11510 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D6804F432A8CBEF400F23E15 /* ProfileSB.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6804F442A8CBEF400F23E15 /* Base */,
+			);
+			name = ProfileSB.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -307,7 +411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WVX5V7QT8W;
+				DEVELOPMENT_TEAM = RVJX7CVR56;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SNSproject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,7 +425,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "suzzang-g.SNSproject";
+				PRODUCT_BUNDLE_IDENTIFIER = com.woojunLee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
