@@ -191,7 +191,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="editProfileTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ksL-q0-E3c"/>
-                                                    <action selector="myPageEditing:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="U2Q-ko-fK3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEI-KP-sUW">

@@ -28,6 +28,7 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView.register(MyPageCollectionViewCell1.self, forCellWithReuseIdentifier: MyPageCollectionViewCell1.identifier)
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -48,11 +49,18 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
         bio.isEditable = false
     }
     
-    // 프로필 수정 버튼을 눌렀을 때 화면 전환
-    @IBAction func myPageEditing(_ sender: Any) {
-        
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    // 프로필 수정 버튼을 눌렀을 때 화면 전환
+  
     
     
     // 셀 클릭하면 내 포스트 나열되어있는 화면으로 넘어가는 기능
