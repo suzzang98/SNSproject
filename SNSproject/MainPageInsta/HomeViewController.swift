@@ -11,6 +11,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet var table: UITableView!
 
+    @IBOutlet weak var Image1: UIImageView!
     
 
     var models = [InstagramPost]()
@@ -18,17 +19,18 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Image1.layer.borderWidth = 1
+        Image1.layer.borderColor = UIColor.purple.cgColor
+        
         table.register(PostTableViewCell.nib(), forCellReuseIdentifier: PostTableViewCell.identifier)
         table.delegate = self
         table.dataSource = self
         
-        models.append(InstagramPost(numberOfLikes: 0, username: "su_hyeon_47", userImageName: "suhyeon", postImageName: "post_1", postWrite: "우리집 고냥이❤️",isLiked: true))
-        models.append(InstagramPost(numberOfLikes: 0, username: "ga_g_yeom__", userImageName: "gagyeom", postImageName: "post_2", postWrite: "고양이 없는사람 무슨낙으로 삼? ㅜ 불쌍 ㅜ",isLiked: true))
-        models.append(InstagramPost(numberOfLikes: 0, username: "woo8jun2", userImageName: "woojun", postImageName: "post_3", postWrite: "아웅 기여어😙",isLiked: true))
-        models.append(InstagramPost(numberOfLikes: 0, username: "k111h00o", userImageName: "kiho", postImageName: "post_4", postWrite: "나만 없어 ... 고양이 ....",isLiked: true))
+        models.append(InstagramPost(numberOfLikes: 0, username: "su_hyeon_47", userImageName: "suhyeon", postImageName: "post_1", postWrite: "우리집 고냥이❤️",isLiked: false))
+        models.append(InstagramPost(numberOfLikes: 0, username: "ga_g_yeom__", userImageName: "gagyeom", postImageName: "post_2", postWrite: "고양이 없는사람 무슨낙으로 삼? ㅜ 불쌍 ㅜ",isLiked: false))
+        models.append(InstagramPost(numberOfLikes: 0, username: "woo8jun2", userImageName: "woojun", postImageName: "post_3", postWrite: "아웅 기여어😙",isLiked: false))
+        models.append(InstagramPost(numberOfLikes: 0, username: "k111h00o", userImageName: "kiho", postImageName: "post_4", postWrite: "나만 없어 ... 고양이 ....",isLiked: false))
         
-//        if likeButtonTapped(index: Bool) -> Int{
-//            numberOfLikes += 1
 //        }
         
     }
@@ -68,6 +70,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 extension HomeViewController:PostCellDelegate{
     func likeButtonTapped(index: Int) {
         models[index].isLiked = !models[index].isLiked
+        table.reloadData()
     }
     
     
