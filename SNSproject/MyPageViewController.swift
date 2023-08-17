@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyPageViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class MyPageViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     // 사용자 이름, 프로필 사진, 유저 네임, 자기소개
     @IBOutlet weak var name: UILabel!
@@ -89,6 +89,7 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
 }
+
 
 // 3칸씩 그리드 맞추는 코드
 extension MyPageViewController: UICollectionViewDelegateFlowLayout{
