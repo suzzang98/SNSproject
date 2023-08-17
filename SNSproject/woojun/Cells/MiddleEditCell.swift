@@ -11,7 +11,7 @@ class MiddleEditCell: UITableViewCell{
     
     static let identifier = "MiddleEditCell"
     
-    var trailingConstraint: NSLayoutConstraint!
+    var trailingConstraint1: NSLayoutConstraint!
     
     let titleLabel: UILabel = {
         let label = UILabel()
@@ -60,10 +60,10 @@ class MiddleEditCell: UITableViewCell{
         contentView.addSubview(iconImageView)
         iconImageView.translatesAutoresizingMaskIntoConstraints = false
         
-        trailingConstraint = iconImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15)
+        trailingConstraint1 = iconImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15)
         NSLayoutConstraint.activate([
             iconImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            trailingConstraint,
+            trailingConstraint1,
             iconImageView.widthAnchor.constraint(equalToConstant: 16),
             iconImageView.heightAnchor.constraint(equalToConstant: 16)
         ])
@@ -89,7 +89,7 @@ class MiddleEditCell: UITableViewCell{
     
     func moveIconToLeft(index: Int) {
         if index == 5 {
-            trailingConstraint.constant = -25
+            trailingConstraint1.constant = -25
         }
         
     }
@@ -98,7 +98,7 @@ class MiddleEditCell: UITableViewCell{
 
 extension MiddleEditCell: SettingText {
     func setText(edit: Edit) {
-        trailingConstraint.constant = edit.Exception ? -25 : -15
+        trailingConstraint1.constant = edit.Exception ? -25 : -15
         titleLabel.text = edit.title
         writingLabel.attributedText = edit.writing == "" ? NSAttributedString(string: edit.writingPlaceholder, attributes: [.foregroundColor: UIColor.lightGray]) : NSAttributedString(string: edit.writing)
     }

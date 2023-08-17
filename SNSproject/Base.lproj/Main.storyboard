@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1050" y="277"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tabbar Controller-->
         <scene sceneID="yft-Wd-wwt">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zWw-qk-TQs" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zWw-qk-TQs" customClass="TabbarController" customModule="SNSproject" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n5e-RQ-gCv">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

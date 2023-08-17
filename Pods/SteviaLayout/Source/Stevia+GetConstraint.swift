@@ -118,7 +118,7 @@ public extension UIView {
      ```
      - Returns: The trailing NSLayoutConstraint if found.
      */
-    var trailingConstraint: NSLayoutConstraint? {
+    var trailingConstraint1: NSLayoutConstraint? {
         return constraintForView(self, attribute: .trailing)
     }
     

@@ -19,10 +19,13 @@
 		1D8B89D82A89C3D900F11510 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D72A89C3D900F11510 /* MyPage.storyboard */; };
 		1D8B89DA2A89C3E800F11510 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D92A89C3E800F11510 /* Search.storyboard */; };
 		1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */; };
-		4CB21B57A5269C2A4034B1B2 /* Pods_SNSproject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA139CA02643B2B94DCA273 /* Pods_SNSproject.framework */; };
-		55D30D722A8A1B8200D84A82 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D30D712A8A1B8200D84A82 /* AddPostViewController.swift */; };
-		55D30DA92A8CBEA500D84A82 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D30DA82A8CBEA500D84A82 /* TabBarController.swift */; };
+		4CB21B57A5269C2A4034B1B2 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		557A4C652A8DBE8D00F217E4 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A4C642A8DBE8D00F217E4 /* TabbarController.swift */; };
+		557A4C692A8DBEF200F217E4 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A4C682A8DBEF200F217E4 /* AddPostViewController.swift */; };
+		55D30D722A8A1B8200D84A82 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		55D30DA92A8CBEA500D84A82 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		55D30DAC2A8CC0CC00D84A82 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 55D30DAB2A8CC0CC00D84A82 /* YPImagePicker */; };
+		C3F6E621C0CE9A223362D1A5 /* Pods_SNSproject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270A17E36733BAD285D5F7B8 /* Pods_SNSproject.framework */; };
 		D6804F452A8CBEF400F23E15 /* UserNameSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6804F412A8CBEF400F23E15 /* UserNameSB.storyboard */; };
 		D6804F462A8CBEF400F23E15 /* NameEditSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6804F422A8CBEF400F23E15 /* NameEditSB.storyboard */; };
 		D6804F472A8CBEF400F23E15 /* ProfileSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6804F432A8CBEF400F23E15 /* ProfileSB.storyboard */; };
@@ -55,6 +58,11 @@
 		1D8B89D72A89C3D900F11510 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		1D8B89D92A89C3E800F11510 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		270A17E36733BAD285D5F7B8 /* Pods_SNSproject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSproject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BAD466EBE071988FC71373C /* Pods-SNSproject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSproject.release.xcconfig"; path = "Target Support Files/Pods-SNSproject/Pods-SNSproject.release.xcconfig"; sourceTree = "<group>"; };
+		557A4C642A8DBE8D00F217E4 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		557A4C682A8DBEF200F217E4 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		7371EA3EEEF6C1A2ECCCC15F /* Pods-SNSproject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSproject.debug.xcconfig"; path = "Target Support Files/Pods-SNSproject/Pods-SNSproject.debug.xcconfig"; sourceTree = "<group>"; };
 		D6804F412A8CBEF400F23E15 /* UserNameSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserNameSB.storyboard; sourceTree = "<group>"; };
 		D6804F422A8CBEF400F23E15 /* NameEditSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NameEditSB.storyboard; sourceTree = "<group>"; };
 		D6804F442A8CBEF400F23E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProfileSB.storyboard; sourceTree = "<group>"; };
@@ -77,8 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CB21B57A5269C2A4034B1B2 /* Pods_SNSproject.framework in Frameworks */,
+				4CB21B57A5269C2A4034B1B2 /* (null) in Frameworks */,
 				55D30DAC2A8CC0CC00D84A82 /* YPImagePicker in Frameworks */,
+				C3F6E621C0CE9A223362D1A5 /* Pods_SNSproject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +99,8 @@
 			children = (
 				1D8B89BE2A89C11600F11510 /* SNSproject */,
 				1D8B89BD2A89C11600F11510 /* Products */,
-				D125E8D40B27F7CFE6937665 /* Pods */,
-				76153DE42D3EBA724BDA8FC5 /* Frameworks */,
+				469F826F3AB3B70EE8CE7662 /* Pods */,
+				A52016CD7376383EDD84C337 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,16 +116,16 @@
 			isa = PBXGroup;
 			children = (
 				1D8B89C52A89C11600F11510 /* Main.storyboard */,
-				55D30DA82A8CBEA500D84A82 /* TabBarController.swift */,
 				1D8B89D32A89C3AC00F11510 /* Home.storyboard */,
 				1D8B89D52A89C3C600F11510 /* AddPost.storyboard */,
-				55D30D712A8A1B8200D84A82 /* AddPostViewController.swift */,
 				1D8B89D72A89C3D900F11510 /* MyPage.storyboard */,
 				1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */,
 				1D8B89D92A89C3E800F11510 /* Search.storyboard */,
 				1D8B89BF2A89C11600F11510 /* AppDelegate.swift */,
 				1D8B89C12A89C11600F11510 /* SceneDelegate.swift */,
 				1D8B89C32A89C11600F11510 /* ViewController.swift */,
+				557A4C642A8DBE8D00F217E4 /* TabbarController.swift */,
+				557A4C682A8DBEF200F217E4 /* AddPostViewController.swift */,
 				1D8B89C82A89C11700F11510 /* Assets.xcassets */,
 				1D8B89CA2A89C11700F11510 /* LaunchScreen.storyboard */,
 				1D8B89CD2A89C11700F11510 /* Info.plist */,
@@ -125,6 +134,23 @@
 				D6804F622A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift */,
 			);
 			path = SNSproject;
+			sourceTree = "<group>";
+		};
+		469F826F3AB3B70EE8CE7662 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7371EA3EEEF6C1A2ECCCC15F /* Pods-SNSproject.debug.xcconfig */,
+				3BAD466EBE071988FC71373C /* Pods-SNSproject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A52016CD7376383EDD84C337 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				270A17E36733BAD285D5F7B8 /* Pods_SNSproject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D6804F1C2A8B1BA900F23E15 /* woojun */ = {
@@ -315,13 +341,15 @@
 				D6804F592A8CBF2A00F23E15 /* LowerEditCell.swift in Sources */,
 				D6804F5B2A8CBF2A00F23E15 /* UpperEditCell.swift in Sources */,
 				1D8B89C42A89C11600F11510 /* ViewController.swift in Sources */,
-				55D30D722A8A1B8200D84A82 /* AddPostViewController.swift in Sources */,
+				55D30D722A8A1B8200D84A82 /* (null) in Sources */,
 				D6804F522A8CBF1000F23E15 /* User.swift in Sources */,
 				D6804F5F2A8CBFE300F23E15 /* SettingText.swift in Sources */,
 				D6804F612A8CBFE300F23E15 /* Edit.swift in Sources */,
 				D6804F632A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift in Sources */,
 				1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */,
-				55D30DA92A8CBEA500D84A82 /* TabBarController.swift in Sources */,
+				557A4C692A8DBEF200F217E4 /* AddPostViewController.swift in Sources */,
+				557A4C652A8DBE8D00F217E4 /* TabbarController.swift in Sources */,
+				55D30DA92A8CBEA500D84A82 /* (null) in Sources */,
 				D6804F532A8CBF1000F23E15 /* Post.swift in Sources */,
 				1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */,
 				1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */,
@@ -476,7 +504,7 @@
 		};
 		1D8B89D12A89C11700F11510 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4839DFA8B6DA99DE77FE6195 /* Pods-SNSproject.debug.xcconfig */;
+			baseConfigurationReference = 7371EA3EEEF6C1A2ECCCC15F /* Pods-SNSproject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -506,7 +534,7 @@
 		};
 		1D8B89D22A89C11700F11510 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B103D12FF071643CD362B967 /* Pods-SNSproject.release.xcconfig */;
+			baseConfigurationReference = 3BAD466EBE071988FC71373C /* Pods-SNSproject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

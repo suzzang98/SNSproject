@@ -1,8 +1,8 @@
 //
-//  UploadPostViewController.swift
-//  TabbarTest
+//  AddPostViewController.swift
+//  SNSproject
 //
-//  Created by 장가겸 on 8/15/23.
+//  Created by 장가겸 on 8/17/23.
 //
 
 import UIKit
@@ -10,9 +10,8 @@ import UIKit
 class AddPostViewController: UIViewController, UITextViewDelegate {
     var myPhoto : UIImage!
     @IBOutlet weak var postImage: UIImageView!
+    @IBOutlet weak var PostButton: UIButton!
     @IBOutlet weak var postText: UITextView!
-    @IBOutlet weak var postButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         postImage.image = myPhoto
@@ -36,13 +35,3 @@ extension AddPostViewController {
         }
     }
 }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */

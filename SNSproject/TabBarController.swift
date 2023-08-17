@@ -1,14 +1,15 @@
 //
-//  TabBarController.swift
+//  TabbarController.swift
 //  SNSproject
 //
-//  Created by 장가겸 on 8/16/23.
+//  Created by 장가겸 on 8/17/23.
 //
 
+import Foundation
 import UIKit
 import YPImagePicker
 
-class TabBarController: UITabBarController, UITabBarControllerDelegate {
+class TabbarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,20 +17,19 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     }
 }
     
-    extension TabBarController {
+    extension TabbarController {
         override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         }
         func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
             if let index = viewControllers?.firstIndex(of: viewController) {
                 if index == 2 {
-                    print("HI")
-                   onPhotoChangeBtnClicked()
+                   onProfileChangeBtnClicked()
                     return false
                 }
             }
             return true
         }
-        func onPhotoChangeBtnClicked(){
+        func onProfileChangeBtnClicked(){
             // 카메라 라이브러리 세팅 (구성을 내가 선택할 수 있다.)
             var config = YPImagePickerConfiguration()
             config.screens = [.library,.photo]
@@ -53,11 +53,11 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
                 guard let vc = storyboard.instantiateViewController(identifier: "AddPostViewController") as? AddPostViewController else{return}
                 
                 if let photo = items.singlePhoto {
-//                    print(photo)
+                    print(photo,"31223131231232")
                     vc.myPhoto = photo.image
                     self.present(vc, animated: true)
                 }
-                
+            
             }
             // 사진 선택창 보여주기
             picker.modalPresentationStyle = .fullScreen

@@ -49,7 +49,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="j6j-a6-cr4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="postButton" destination="UFI-zP-cjm" id="oat-Dv-Rfo"/>
+                        <outlet property="PostButton" destination="UFI-zP-cjm" id="UgZ-dk-1IF"/>
                         <outlet property="postImage" destination="OlU-gF-1fO" id="ao1-bD-mgj"/>
                         <outlet property="postText" destination="Fre-Rs-ilF" id="hzd-z4-VXU"/>
                     </connections>
