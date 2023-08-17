@@ -18,6 +18,10 @@
 		1D8B89D82A89C3D900F11510 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D72A89C3D900F11510 /* MyPage.storyboard */; };
 		1D8B89DA2A89C3E800F11510 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D92A89C3E800F11510 /* Search.storyboard */; };
 		1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */; };
+		4CB21B57A5269C2A4034B1B2 /* Pods_SNSproject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA139CA02643B2B94DCA273 /* Pods_SNSproject.framework */; };
+		55D30D722A8A1B8200D84A82 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D30D712A8A1B8200D84A82 /* AddPostViewController.swift */; };
+		55D30DA92A8CBEA500D84A82 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D30DA82A8CBEA500D84A82 /* TabBarController.swift */; };
+		55D30DAC2A8CC0CC00D84A82 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 55D30DAB2A8CC0CC00D84A82 /* YPImagePicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,11 @@
 		1D8B89D72A89C3D900F11510 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		1D8B89D92A89C3E800F11510 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		4839DFA8B6DA99DE77FE6195 /* Pods-SNSproject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSproject.debug.xcconfig"; path = "Target Support Files/Pods-SNSproject/Pods-SNSproject.debug.xcconfig"; sourceTree = "<group>"; };
+		55D30D712A8A1B8200D84A82 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		55D30DA82A8CBEA500D84A82 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		5AA139CA02643B2B94DCA273 /* Pods_SNSproject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSproject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B103D12FF071643CD362B967 /* Pods-SNSproject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSproject.release.xcconfig"; path = "Target Support Files/Pods-SNSproject/Pods-SNSproject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CB21B57A5269C2A4034B1B2 /* Pods_SNSproject.framework in Frameworks */,
+				55D30DAC2A8CC0CC00D84A82 /* YPImagePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +63,8 @@
 			children = (
 				1D8B89BE2A89C11600F11510 /* SNSproject */,
 				1D8B89BD2A89C11600F11510 /* Products */,
+				D125E8D40B27F7CFE6937665 /* Pods */,
+				76153DE42D3EBA724BDA8FC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				1D8B89C52A89C11600F11510 /* Main.storyboard */,
+				55D30DA82A8CBEA500D84A82 /* TabBarController.swift */,
 				1D8B89D32A89C3AC00F11510 /* Home.storyboard */,
 				1D8B89D52A89C3C600F11510 /* AddPost.storyboard */,
+				55D30D712A8A1B8200D84A82 /* AddPostViewController.swift */,
 				1D8B89D72A89C3D900F11510 /* MyPage.storyboard */,
 				1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */,
 				1D8B89D92A89C3E800F11510 /* Search.storyboard */,
@@ -82,6 +97,23 @@
 			path = SNSproject;
 			sourceTree = "<group>";
 		};
+		76153DE42D3EBA724BDA8FC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AA139CA02643B2B94DCA273 /* Pods_SNSproject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D125E8D40B27F7CFE6937665 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4839DFA8B6DA99DE77FE6195 /* Pods-SNSproject.debug.xcconfig */,
+				B103D12FF071643CD362B967 /* Pods-SNSproject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +121,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D8B89D02A89C11700F11510 /* Build configuration list for PBXNativeTarget "SNSproject" */;
 			buildPhases = (
+				9213F49C61146008132AA592 /* [CP] Check Pods Manifest.lock */,
 				1D8B89B82A89C11600F11510 /* Sources */,
 				1D8B89B92A89C11600F11510 /* Frameworks */,
 				1D8B89BA2A89C11600F11510 /* Resources */,
+				4056503B96325B26D82713A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SNSproject;
+			packageProductDependencies = (
+				55D30DAB2A8CC0CC00D84A82 /* YPImagePicker */,
+			);
 			productName = SNSproject;
 			productReference = 1D8B89BC2A89C11600F11510 /* SNSproject.app */;
 			productType = "com.apple.product-type.application";
@@ -126,6 +163,9 @@
 				Base,
 			);
 			mainGroup = 1D8B89B32A89C11600F11510;
+			packageReferences = (
+				55D30DAA2A8CC0CC00D84A82 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
+			);
 			productRefGroup = 1D8B89BD2A89C11600F11510 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -152,13 +192,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4056503B96325B26D82713A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNSproject/Pods-SNSproject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNSproject/Pods-SNSproject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNSproject/Pods-SNSproject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9213F49C61146008132AA592 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNSproject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D8B89B82A89C11600F11510 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D8B89C42A89C11600F11510 /* ViewController.swift in Sources */,
+				55D30D722A8A1B8200D84A82 /* AddPostViewController.swift in Sources */,
 				1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */,
+				55D30DA92A8CBEA500D84A82 /* TabBarController.swift in Sources */,
 				1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */,
 				1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */,
 			);
@@ -302,6 +386,7 @@
 		};
 		1D8B89D12A89C11700F11510 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4839DFA8B6DA99DE77FE6195 /* Pods-SNSproject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -331,6 +416,7 @@
 		};
 		1D8B89D22A89C11700F11510 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B103D12FF071643CD362B967 /* Pods-SNSproject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -380,6 +466,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55D30DAA2A8CC0CC00D84A82 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55D30DAB2A8CC0CC00D84A82 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55D30DAA2A8CC0CC00D84A82 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D8B89B42A89C11600F11510 /* Project object */;
 }
