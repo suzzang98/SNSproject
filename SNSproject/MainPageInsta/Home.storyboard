@@ -219,6 +219,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6R1-zh-zWQ" secondAttribute="trailing" id="eA6-Ek-MQb"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="jEh-zz-ir2"/>
                     <navigationItem key="navigationItem" id="ULS-ea-oSz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

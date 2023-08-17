@@ -22,7 +22,7 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate {
         }
         func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
             if let index = viewControllers?.firstIndex(of: viewController) {
-                if index == 2 {
+                if index == 1 {
                    onProfileChangeBtnClicked()
                     return false
                 }
