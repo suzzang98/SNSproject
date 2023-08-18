@@ -113,6 +113,16 @@
 			path = MainPageInsta;
 			sourceTree = "<group>";
 		};
+		1D5C239C2A8F8F70008E4ED3 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */,
+				1D5C239A2A8F0E15008E4ED3 /* MyPageCollectionReusableView.swift */,
+				D6804F622A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		1D8B89B32A89C11600F11510 = {
 			isa = PBXGroup;
 			children = (
@@ -137,13 +147,11 @@
 				1D8B89C52A89C11600F11510 /* Main.storyboard */,
 				1D8B89D52A89C3C600F11510 /* AddPost.storyboard */,
 				1D8B89D72A89C3D900F11510 /* MyPage.storyboard */,
-				1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */,
 				1D8B89D92A89C3E800F11510 /* Search.storyboard */,
 				1D8B89BF2A89C11600F11510 /* AppDelegate.swift */,
-				1D5C239A2A8F0E15008E4ED3 /* MyPageCollectionReusableView.swift */,
-				D6804F622A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift */,
 				1D8B89C12A89C11600F11510 /* SceneDelegate.swift */,
 				1D8B89C32A89C11600F11510 /* ViewController.swift */,
+				1D5C239C2A8F8F70008E4ED3 /* MyPage */,
 				07E35D752A8CBDE400FD7347 /* MainPageInsta */,
 				557A4C642A8DBE8D00F217E4 /* TabbarController.swift */,
 				557A4C682A8DBEF200F217E4 /* AddPostViewController.swift */,
