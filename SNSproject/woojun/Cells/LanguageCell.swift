@@ -12,7 +12,7 @@ class LanguageCell: UICollectionViewCell{
     static let identifier = "LanguageCell"
     
     
-    
+    // d
     override var isSelected: Bool {
         didSet {
             if isSelected {

@@ -23,6 +23,7 @@
 		1D8B89D82A89C3D900F11510 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D72A89C3D900F11510 /* MyPage.storyboard */; };
 		1D8B89DA2A89C3E800F11510 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8B89D92A89C3E800F11510 /* Search.storyboard */; };
 		1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */; };
+		1D90CE2F2A8FB9010058A6F6 /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90CE2E2A8FB9010058A6F6 /* LanguageCell.swift */; };
 		4CB21B57A5269C2A4034B1B2 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		557A4C652A8DBE8D00F217E4 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A4C642A8DBE8D00F217E4 /* TabbarController.swift */; };
 		557A4C692A8DBEF200F217E4 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A4C682A8DBEF200F217E4 /* AddPostViewController.swift */; };
@@ -45,7 +46,6 @@
 		D6804F602A8CBFE300F23E15 /* UserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F5D2A8CBFE300F23E15 /* UserInfoRepository.swift */; };
 		D6804F612A8CBFE300F23E15 /* Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F5E2A8CBFE300F23E15 /* Edit.swift */; };
 		D6804F632A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6804F622A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift */; };
-		D6B6ADDC2A8FA32300EE5577 /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6ADDB2A8FA32300EE5577 /* LanguageCell.swift */; };
 		D6B6ADE82A8FA35B00EE5577 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6ADDE2A8FA35B00EE5577 /* Language.swift */; };
 		D6B6ADE92A8FA35B00EE5577 /* CancelIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6ADE02A8FA35B00EE5577 /* CancelIconView.swift */; };
 		D6B6ADEC2A8FA35B00EE5577 /* LinerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6ADE42A8FA35B00EE5577 /* LinerView.swift */; };
@@ -73,6 +73,7 @@
 		1D8B89D72A89C3D900F11510 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		1D8B89D92A89C3E800F11510 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		1D90CE2E2A8FB9010058A6F6 /* LanguageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
 		270A17E36733BAD285D5F7B8 /* Pods_SNSproject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSproject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAD466EBE071988FC71373C /* Pods-SNSproject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSproject.release.xcconfig"; path = "Target Support Files/Pods-SNSproject/Pods-SNSproject.release.xcconfig"; sourceTree = "<group>"; };
 		557A4C642A8DBE8D00F217E4 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		D6804F5D2A8CBFE300F23E15 /* UserInfoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRepository.swift; sourceTree = "<group>"; };
 		D6804F5E2A8CBFE300F23E15 /* Edit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edit.swift; sourceTree = "<group>"; };
 		D6804F622A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCollectionViewCell1.swift; sourceTree = "<group>"; };
-		D6B6ADDB2A8FA32300EE5577 /* LanguageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageCell.swift; path = "../../../../Copy/Custom Views/LanguageCell.swift"; sourceTree = "<group>"; };
 		D6B6ADDE2A8FA35B00EE5577 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		D6B6ADE02A8FA35B00EE5577 /* CancelIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelIconView.swift; sourceTree = "<group>"; };
 		D6B6ADE42A8FA35B00EE5577 /* LinerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinerView.swift; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		D6804F552A8CBF2A00F23E15 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D6B6ADDB2A8FA32300EE5577 /* LanguageCell.swift */,
+				1D90CE2E2A8FB9010058A6F6 /* LanguageCell.swift */,
 				D6804F562A8CBF2A00F23E15 /* LowerEditCell.swift */,
 				D6804F572A8CBF2A00F23E15 /* MiddleEditCell.swift */,
 				D6804F582A8CBF2A00F23E15 /* UpperEditCell.swift */,
@@ -428,7 +428,6 @@
 				557A4C652A8DBE8D00F217E4 /* TabbarController.swift in Sources */,
 				55D30DA92A8CBEA500D84A82 /* (null) in Sources */,
 				D6B6ADF12A8FA6C600EE5577 /* PostRepository.swift in Sources */,
-				D6B6ADDC2A8FA32300EE5577 /* LanguageCell.swift in Sources */,
 				D6804F532A8CBF1000F23E15 /* Post.swift in Sources */,
 				1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */,
 				D6B6ADE82A8FA35B00EE5577 /* Language.swift in Sources */,
@@ -437,6 +436,7 @@
 				07E35D722A8A0D2600FD7347 /* HomeViewController.swift in Sources */,
 				D6B6ADEC2A8FA35B00EE5577 /* LinerView.swift in Sources */,
 				D6804F602A8CBFE300F23E15 /* UserInfoRepository.swift in Sources */,
+				1D90CE2F2A8FB9010058A6F6 /* LanguageCell.swift in Sources */,
 				D6804F5A2A8CBF2A00F23E15 /* MiddleEditCell.swift in Sources */,
 				D6B6ADE92A8FA35B00EE5577 /* CancelIconView.swift in Sources */,
 			);
