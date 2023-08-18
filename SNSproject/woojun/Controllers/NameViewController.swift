@@ -21,16 +21,9 @@ class NameViewController: UIViewController {
     
     private func setLowerText() {
         let text = """
-Help people discover your account by using the name you're known by: either your full name,
-nickname or business name.
-
-You can only change your name twice within 14 days
+in most cases, you'll be able to change your username back to zigo12 for another 14 days.
 """
         
         lowerLabel.text = text
     }
-    
-    
-    
-    
 }

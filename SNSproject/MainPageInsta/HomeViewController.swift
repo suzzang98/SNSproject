@@ -45,15 +45,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         image1.layer.borderWidth = 1
         image1.layer.borderColor = UIColor.purple.cgColor
-        image2.layer.borderWidth = 1
-        image2.layer.borderColor = UIColor.purple.cgColor
-        image3.layer.borderWidth = 1
-        image3.layer.borderColor = UIColor.gray.cgColor
-        image4.layer.borderWidth = 1
-        image4.layer.borderColor = UIColor.gray.cgColor
         
         table.register(PostTableViewCell.nib(), forCellReuseIdentifier: PostTableViewCell.identifier)
         table.delegate = self

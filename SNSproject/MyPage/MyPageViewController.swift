@@ -8,45 +8,21 @@
 import UIKit
 
 class MyPageViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
-
-    // 사용자 이름, 프로필 사진, 유저 네임, 자기소개
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var myPageProfileImage: UIImageView!
-    @IBOutlet weak var userName: UILabel!
-    @IBOutlet weak var bio: UITextView!
     
     @IBOutlet var collectionView: UICollectionView!
     
+    var posts = PostRepository.shared.getAllPosts()
     
-    // 게시물, 팔로워, 팔로잉 숫자
-    @IBOutlet weak var postNum: UILabel!
-    @IBOutlet weak var followNum: UILabel!
-    @IBOutlet weak var followingNum: UILabel!
- 
+    var user = UserInfoRepository.shared
     // 포스트 reverse 하는 코드
-    var reversedMyPost: [Post] = myPost.reversed()
+    var reversedMyPost: [Post] = PostRepository.shared.getAllPosts()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         collectionView.register(MyPageCollectionViewCell1.self, forCellWithReuseIdentifier: MyPageCollectionViewCell1.identifier)
         collectionView.dataSource = self
         collectionView.delegate = self
-        
-        // 사용자 이름, 프로필 사진, 유저 네임, 자기소개 설정
-        myPageProfileImage.image = UIImage(named: sampleUser.profilePhoto)
-        name.text = sampleUser.name
-        userName.text = sampleUser.userName
-        bio.text = sampleUser.bio
-        
-        // 게시물, 팔로워, 팔로잉 숫자 설정
-        postNum.text = String(sampleUser.postList.count)
-        followNum.text = String(sampleUser.follower)
-        followingNum.text = String(sampleUser.following)
-        
-        // 프로필 이미지를 동그라미로
-        myPageProfileImage.layer.cornerRadius = myPageProfileImage.frame.height/2
-        bio.isEditable = false
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,27 +34,11 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
         super.viewDidDisappear(animated)
         navigationController?.navigationBar.isHidden = false
     }
-    
-    // 프로필 수정 버튼을 눌렀을 때 화면 전환
-  
-    
-    
-    // 셀 클릭하면 내 포스트 나열되어있는 화면으로 넘어가는 기능
-    
-    
-    @IBAction func editProfileTapped(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "ProfileSB", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "ProfileEditVC")
-        vc.hidesBottomBarWhenPushed = true
-        navigationController?.pushViewController(vc, animated: true)
-        
-    }
-    
-    
+
     
     // 컬렉션뷰의 셀의 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return myPost.count
+        return reversedMyPost.count
     }
     // 어떤 셀을 보여줄 것인지
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -87,7 +47,36 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
         cell.imageView.image = UIImage(named: reversedMyPost[indexPath.row].photo) ?? UIImage()
         return cell
     }
-    
+
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+
+        //ofKind에 UICollectionView.elementKindSectionHeader로 헤더를 설정해주고
+        //withReuseIdentifier에 헤더뷰 identifier를 넣어주고
+        //생성한 헤더뷰로 캐스팅해준다.
+        
+        
+        let headerview = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header", for: indexPath) as! MyPageCollectionReusableView
+        
+        headerview.delegate = self
+        
+        headerview.myPageProfileImage.image = UIImage(named: user.profilePhoto)
+        headerview.name.text = user.name
+        headerview.userName.text = user.userName
+        headerview.bio.text = user.bio
+        headerview.bio.isEditable = false
+
+        // 게시물, 팔로워, 팔로잉 숫자 설정
+        headerview.postNum.text = String(posts.count)
+        headerview.followNum.text = String(user.follower)
+        headerview.followingNum.text = String(user.following)
+
+        // 프로필 이미지를 동그라미로
+        headerview.myPageProfileImage.layer.cornerRadius = headerview.myPageProfileImage.frame.height/2
+
+
+        return headerview
+
+    }
 }
 
 // 3칸씩 그리드 맞추는 코드
@@ -115,4 +104,30 @@ extension MyPageViewController: UICollectionViewDelegateFlowLayout{
         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
             return 3
     }
+}
+
+extension MyPageViewController: myPageCollectionReusableViewDelegate {
+    func profileShareTapped() {
+        let alert = UIAlertController(title:"프로필 공유",
+            message: "프로필이 공유되었습니다.",
+            preferredStyle: UIAlertController.Style.alert)
+        //2. 확인 버튼 만들기
+        let ok = UIAlertAction(title: "확인", style: .default, handler: nil)
+        //3. 확인 버튼을 경고창에 추가하기
+        alert.addAction(ok)
+        //4. 경고창 보이기
+        present(alert,animated: true,completion: nil)
+    }
+    
+    func postTapped() {
+        print("postTapped")
+    }
+    
+    func profileTapped() {
+        let storyBoard = UIStoryboard(name: "ProfileSB", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "ProfileEditVC")
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
