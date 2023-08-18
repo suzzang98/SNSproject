@@ -55,13 +55,13 @@ class PostTableViewCell: UITableViewCell {
 
     }
     
-    func configure(with model: InstagramPost,index:Int){
+    func configure(with model: Post,index:Int){
         self.index = index
         self.likesLabel.text = "\(model.numberOfLikes) Likes"
-        self.usernameLabel.text = model.username
-        self.userImageView.image = UIImage(named: model.userImageName)
-        self.postImageView.image = UIImage(named: model.postImageName)
-        self.posting.text = model.postWrite
+        self.usernameLabel.text = "asdas"
+        self.userImageView.image = UIImage(named: model.photo)
+        self.postImageView.image = UIImage()
+        self.posting.text = model.content
     }
     
     

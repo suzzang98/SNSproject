@@ -10,6 +10,12 @@
 		07E35D6F2A8A0CEE00FD7347 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E35D6D2A8A0CEE00FD7347 /* PostTableViewCell.swift */; };
 		07E35D702A8A0CEE00FD7347 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E35D6E2A8A0CEE00FD7347 /* PostTableViewCell.xib */; };
 		07E35D722A8A0D2600FD7347 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E35D712A8A0D2600FD7347 /* HomeViewController.swift */; };
+		07E35DA22A8E152700FD7347 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E35DA02A8E152700FD7347 /* StoryTableViewCell.swift */; };
+		07E35DA32A8E152700FD7347 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E35DA12A8E152700FD7347 /* StoryTableViewCell.xib */; };
+		07E35DA52A8E4E7400FD7347 /* InstaStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E35DA42A8E4E7400FD7347 /* InstaStory.storyboard */; };
+		07E35DA82A8E4EF600FD7347 /* InstaStoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E35DA62A8E4EF600FD7347 /* InstaStoryTableViewController.swift */; };
+		07E35DAC2A8F1A7D00FD7347 /* DmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E35DAA2A8F1A7D00FD7347 /* DmTableViewController.swift */; };
+		07E35DB52A8F914F00FD7347 /* DmWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E35DB42A8F914F00FD7347 /* DmWindow.storyboard */; };
 		1D5C238B2A8CC3D7008E4ED3 /* SamplePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C238A2A8CC3D7008E4ED3 /* SamplePost.swift */; };
 		1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89BF2A89C11600F11510 /* AppDelegate.swift */; };
 		1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89C12A89C11600F11510 /* SceneDelegate.swift */; };
@@ -50,6 +56,12 @@
 		07E35D6D2A8A0CEE00FD7347 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		07E35D6E2A8A0CEE00FD7347 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		07E35D712A8A0D2600FD7347 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		07E35DA02A8E152700FD7347 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		07E35DA12A8E152700FD7347 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		07E35DA42A8E4E7400FD7347 /* InstaStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstaStory.storyboard; sourceTree = "<group>"; };
+		07E35DA62A8E4EF600FD7347 /* InstaStoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaStoryTableViewController.swift; sourceTree = "<group>"; };
+		07E35DAA2A8F1A7D00FD7347 /* DmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmTableViewController.swift; sourceTree = "<group>"; };
+		07E35DB42A8F914F00FD7347 /* DmWindow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DmWindow.storyboard; sourceTree = "<group>"; };
 		1D5C238A2A8CC3D7008E4ED3 /* SamplePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePost.swift; sourceTree = "<group>"; };
 		1D8B89BC2A89C11600F11510 /* SNSproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8B89BF2A89C11600F11510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +119,12 @@
 				07E35D6E2A8A0CEE00FD7347 /* PostTableViewCell.xib */,
 				07E35D712A8A0D2600FD7347 /* HomeViewController.swift */,
 				1D8B89D32A89C3AC00F11510 /* Home.storyboard */,
+				07E35DA02A8E152700FD7347 /* StoryTableViewCell.swift */,
+				07E35DA12A8E152700FD7347 /* StoryTableViewCell.xib */,
+				07E35DA42A8E4E7400FD7347 /* InstaStory.storyboard */,
+				07E35DA62A8E4EF600FD7347 /* InstaStoryTableViewController.swift */,
+				07E35DAA2A8F1A7D00FD7347 /* DmTableViewController.swift */,
+				07E35DB42A8F914F00FD7347 /* DmWindow.storyboard */,
 			);
 			path = MainPageInsta;
 			sourceTree = "<group>";
@@ -290,12 +308,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D8B89CC2A89C11700F11510 /* LaunchScreen.storyboard in Resources */,
+				07E35DA52A8E4E7400FD7347 /* InstaStory.storyboard in Resources */,
 				D6804F452A8CBEF400F23E15 /* UserNameSB.storyboard in Resources */,
 				1D8B89D82A89C3D900F11510 /* MyPage.storyboard in Resources */,
+				07E35DB52A8F914F00FD7347 /* DmWindow.storyboard in Resources */,
 				1D8B89C92A89C11700F11510 /* Assets.xcassets in Resources */,
 				1D8B89D62A89C3C600F11510 /* AddPost.storyboard in Resources */,
 				D6804F472A8CBEF400F23E15 /* ProfileSB.storyboard in Resources */,
 				1D8B89C72A89C11600F11510 /* Main.storyboard in Resources */,
+				07E35DA32A8E152700FD7347 /* StoryTableViewCell.xib in Resources */,
 				D6804F462A8CBEF400F23E15 /* NameEditSB.storyboard in Resources */,
 				1D8B89DA2A89C3E800F11510 /* Search.storyboard in Resources */,
 				1D8B89D42A89C3AC00F11510 /* Home.storyboard in Resources */,
@@ -352,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E35DAC2A8F1A7D00FD7347 /* DmTableViewController.swift in Sources */,
 				D6804F4D2A8CBF0500F23E15 /* UserNameVC.swift in Sources */,
 				D6804F4C2A8CBF0500F23E15 /* ProfileEditVC.swift in Sources */,
 				D6804F4E2A8CBF0500F23E15 /* NameViewController.swift in Sources */,
@@ -365,6 +387,7 @@
 				D6804F612A8CBFE300F23E15 /* Edit.swift in Sources */,
 				D6804F632A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift in Sources */,
 				1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */,
+				07E35DA82A8E4EF600FD7347 /* InstaStoryTableViewController.swift in Sources */,
 				07E35D6F2A8A0CEE00FD7347 /* PostTableViewCell.swift in Sources */,
 				557A4C692A8DBEF200F217E4 /* AddPostViewController.swift in Sources */,
 				557A4C652A8DBE8D00F217E4 /* TabbarController.swift in Sources */,
@@ -375,6 +398,7 @@
 				07E35D722A8A0D2600FD7347 /* HomeViewController.swift in Sources */,
 				D6804F602A8CBFE300F23E15 /* UserInfoRepository.swift in Sources */,
 				D6804F5A2A8CBF2A00F23E15 /* MiddleEditCell.swift in Sources */,
+				07E35DA22A8E152700FD7347 /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

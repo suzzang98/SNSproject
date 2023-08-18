@@ -18,10 +18,10 @@
             </objects>
             <point key="canvasLocation" x="-115" y="277"/>
         </scene>
-        <!--HomeViewController-->
+        <!--Home-->
         <scene sceneID="TX6-Wc-IBw">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" referencedIdentifier="HomeViewController" id="WBA-qs-444" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" id="WBA-qs-444" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Udt-I1-qDD"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVb-rX-c8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
