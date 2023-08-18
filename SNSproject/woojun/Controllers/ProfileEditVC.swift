@@ -11,39 +11,6 @@ import UIKit
 class ProfileEditVC: UIViewController {
 
    
-    
-    var userInfoRepository = UserInfoRepository.shared {
-        didSet {
-            tableView.reloadData()
-        }
-    }
-    
-    
-    var tableViewModel: [Edit] {
-        let editViewData = [
-            Edit(title: "Name", writing: userInfoRepository.name, writingPlaceholder: "" ,Exception: false),
-            Edit(title: "Username", writing: userInfoRepository.userName, writingPlaceholder: "",Exception: false),
-            Edit(title: "Pronouns", writing: userInfoRepository.pronouns, writingPlaceholder: "Pronouns",Exception: false),
-            Edit(title: "Bio", writing: userInfoRepository.bio, writingPlaceholder: "Bio",Exception: false),
-            Edit(title: "Links", writing: userInfoRepository.links, writingPlaceholder: "Add Links",Exception: false),
-            Edit(title: "Gender", writing: userInfoRepository.gender, writingPlaceholder: "Gender",Exception: true),
-            Edit(title: "Switch to professional account", writing: "", writingPlaceholder: "",Exception: false),
-            Edit(title: "Personal information settings", writing: "", writingPlaceholder: "",Exception: true)
-        ]
-        return editViewData
-    }
-    
-//    let editViewData = [
-//        Edit(title: "Name", writing: "Zigo", Exception: false),
-//        Edit(title: "Username", writing: "Zigo1414", Exception: false),
-//        Edit(title: "Pronouns", writing: "Pronouns", Exception: false),
-//        Edit(title: "Bio", writing: "Bio", Exception: false),
-//        Edit(title: "Links", writing: "Add Links", Exception: false),
-//        Edit(title: "Gender", writing: "Gender", Exception: true),
-//        Edit(title: "Switch to professional account", writing: "", Exception: false),
-//        Edit(title: "Personal information settings", writing: "", Exception: true)
-//    ]
-    
     @IBOutlet var leftImageView: UIImageView!
     @IBOutlet var rightImageView: UIImageView!
     
@@ -51,7 +18,16 @@ class ProfileEditVC: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
+    var userInfoRepository = UserInfoRepository.shared {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
+    var tableViewModel: [Edit] {
+       
+        return makeTableViewModel()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +41,7 @@ class ProfileEditVC: UIViewController {
         tableView.isScrollEnabled = false
         tableView.delegate = self
         tableView.dataSource = self
-        
+        tableView.rowHeight = 50
     }
     
     private func setImage() {
@@ -77,13 +53,28 @@ class ProfileEditVC: UIViewController {
         
     }
     
+    private func makeTableViewModel() -> [Edit] {
+        let editViewData = [
+            Edit(title: "Name", writing: userInfoRepository.name, writingPlaceholder: "" ,Exception: false),
+            Edit(title: "Username", writing: userInfoRepository.userName, writingPlaceholder: "",Exception: false),
+            Edit(title: "Pronouns", writing: userInfoRepository.pronouns, writingPlaceholder: "Pronouns",Exception: false),
+            Edit(title: "Bio", writing: userInfoRepository.bio, writingPlaceholder: "Bio",Exception: false),
+            Edit(title: "Links", writing: userInfoRepository.links, writingPlaceholder: "Add Links",Exception: false),
+            Edit(title: "Gender", writing: userInfoRepository.gender, writingPlaceholder: "Gender",Exception: true),
+            Edit(title: "Switch to professional account", writing: "", writingPlaceholder: "",Exception: false),
+            Edit(title: "Personal information settings", writing: "", writingPlaceholder: "",Exception: false),
+            Edit(title: "Sign up for Meta Verified", writing: "", writingPlaceholder: "",Exception: true)
+        ]
+        return editViewData
+    }
+    
   
     
 }
 
 extension ProfileEditVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        8
+        9
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -96,7 +87,7 @@ extension ProfileEditVC: UITableViewDataSource {
         case 4...5:
             cell = MiddleEditCell()
             
-        case 6...7:
+        case 6...8:
             cell = LowerEditCell()
             
         default:
@@ -117,10 +108,18 @@ extension ProfileEditVC: UITableViewDelegate {
             
         case 0:
             let storyboard = UIStoryboard(name: "NameEditSB", bundle: nil)
-            
             let vc = storyboard.instantiateViewController(identifier: "NameViewController")
             navigationController?.pushViewController(vc, animated: true)
-
+        case 1:
+            let storyboard = UIStoryboard(name: "UserNameSB", bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: "UserNameVC")
+            navigationController?.pushViewController(vc, animated: true)
+        case 2:
+            let vc = PronounsVC()
+            navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc = BioVC()
+            navigationController?.pushViewController(vc, animated: true)
         default:
             print("Default")
         }

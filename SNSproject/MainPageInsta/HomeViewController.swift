@@ -18,7 +18,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(navigationController, "@@@@")
         Image1.layer.borderWidth = 1
         Image1.layer.borderColor = UIColor.purple.cgColor
         
