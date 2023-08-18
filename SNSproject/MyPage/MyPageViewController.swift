@@ -11,8 +11,11 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     @IBOutlet var collectionView: UICollectionView!
     
+    var posts = PostRepository.shared.getAllPosts()
+    
+    var user = UserInfoRepository.shared
     // 포스트 reverse 하는 코드
-    var reversedMyPost: [Post] = myPost.reversed()
+    var reversedMyPost: [Post] = PostRepository.shared.getAllPosts()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +38,7 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     // 컬렉션뷰의 셀의 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return myPost.count
+        return reversedMyPost.count
     }
     // 어떤 셀을 보여줄 것인지
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -56,16 +59,16 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         headerview.delegate = self
         
-        headerview.myPageProfileImage.image = UIImage(named: sampleUser.profilePhoto)
-        headerview.name.text = sampleUser.name
-        headerview.userName.text = sampleUser.userName
-        headerview.bio.text = sampleUser.bio
+        headerview.myPageProfileImage.image = UIImage(named: user.profilePhoto)
+        headerview.name.text = user.name
+        headerview.userName.text = user.userName
+        headerview.bio.text = user.bio
         headerview.bio.isEditable = false
 
         // 게시물, 팔로워, 팔로잉 숫자 설정
-        headerview.postNum.text = String(sampleUser.postList.count)
-        headerview.followNum.text = String(sampleUser.follower)
-        headerview.followingNum.text = String(sampleUser.following)
+        headerview.postNum.text = String(posts.count)
+        headerview.followNum.text = String(user.follower)
+        headerview.followingNum.text = String(user.following)
 
         // 프로필 이미지를 동그라미로
         headerview.myPageProfileImage.layer.cornerRadius = headerview.myPageProfileImage.frame.height/2

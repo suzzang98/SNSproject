@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Post {
+struct Post: Equatable {
     
-    var id: Int // uuid
+    var id: String // uuid
     var photo: String // post image name
     var content: String // 내용
     var uploadDate: Date // 날짜
@@ -17,11 +17,8 @@ struct Post {
     var isLiked: Bool = false
     var numberOfLikes: Int = 0
     
-    
-//    let numberOfLikes: Int
-//     let username: String
-//     let userImageName: String //file url
-//     let postImageName:String //
-//     let postWrite:String
-//     var isLiked:Bool
+    static func == (lhs: Post, rhs: Post) -> Bool {
+        return lhs.id == rhs.id
+    }
+
 }
