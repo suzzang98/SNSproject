@@ -104,6 +104,18 @@ extension MyPageViewController: UICollectionViewDelegateFlowLayout{
 }
 
 extension MyPageViewController: myPageCollectionReusableViewDelegate {
+    func profileShareTapped() {
+        let alert = UIAlertController(title:"프로필 공유",
+            message: "프로필이 공유되었습니다.",
+            preferredStyle: UIAlertController.Style.alert)
+        //2. 확인 버튼 만들기
+        let ok = UIAlertAction(title: "확인", style: .default, handler: nil)
+        //3. 확인 버튼을 경고창에 추가하기
+        alert.addAction(ok)
+        //4. 경고창 보이기
+        present(alert,animated: true,completion: nil)
+    }
+    
     func postTapped() {
         print("postTapped")
     }

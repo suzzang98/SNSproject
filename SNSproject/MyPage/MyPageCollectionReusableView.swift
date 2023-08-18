@@ -11,6 +11,7 @@ import UIKit
 protocol myPageCollectionReusableViewDelegate: AnyObject {
     func profileTapped()
     func postTapped()
+    func profileShareTapped()
     
 }
 
@@ -28,7 +29,11 @@ class MyPageCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var followNum: UILabel!
     @IBOutlet weak var followingNum: UILabel!
  
-    // 셀 클릭하면 내 포스트 나열되어있는 화면으로 넘어가는 기능
+    // 프로필 공유 버튼 누르면 팝업창 뜨게 하기
+    @IBAction func profileShareTapped(_ sender: Any) {
+        delegate?.profileShareTapped()
+    }
+    // + 버튼 클릭하면 내 포스트 나열되어있는 화면으로 넘어가는 기능
     @IBAction func addPostTapped(_ sender: Any) {
         print("addPostTapped")
     }

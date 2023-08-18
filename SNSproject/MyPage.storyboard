@@ -227,6 +227,9 @@
                                                             <buttonConfiguration key="configuration" style="gray" title="프로필 공유">
                                                                 <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="profileShareTapped:" destination="EB6-t6-kf2" eventType="touchUpInside" id="YbT-a6-iih"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
