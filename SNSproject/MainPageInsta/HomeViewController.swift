@@ -47,15 +47,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         image1.layer.borderWidth = 1
         image1.layer.borderColor = UIColor.purple.cgColor
+        image2.layer.borderWidth = 1
+        image2.layer.borderColor = UIColor.purple.cgColor
         
         table.register(PostTableViewCell.nib(), forCellReuseIdentifier: PostTableViewCell.identifier)
         table.delegate = self
         table.dataSource = self
         
-        models.append(Post(id: 0, photo: "suhyeon", content: "우리집 고냥이❤️", uploadDate: Date()))
-        models.append(Post(id: 1, photo: "gagyeom", content: "고양이 없는사람 무슨낙으로 삼? ㅜ 불쌍 ㅜ", uploadDate: Date()))
-        models.append(Post(id: 2, photo: "woojun", content: "아웅 기여어😙", uploadDate: Date()))
-        models.append(Post(id: 3, photo: "kiho", content: "나만 없어 ... 고양이 ....", uploadDate: Date()))
+        models.append(Post(id: "0", photo: "suhyeon", content: "우리집 고냥이❤️", uploadDate: Date()))
+        models.append(Post(id: "1", photo: "gagyeom", content: "고양이 없는사람 무슨낙으로 삼? ㅜ 불쌍 ㅜ", uploadDate: Date()))
+        models.append(Post(id: "2", photo: "woojun", content: "아웅 기여어😙", uploadDate: Date()))
+        models.append(Post(id: "3", photo: "kiho", content: "나만 없어 ... 고양이 ....", uploadDate: Date()))
         
 //        models.append(Post(numberOfLikes: 0, username: "su_hyeon_47", userImageName: "suhyeon", postImageName: "post_1", postWrite: "우리집 고냥이❤️",isLiked: false))
 //        models.append(Post(numberOfLikes: 0, username: "ga_g_yeom__", userImageName: "gagyeom", postImageName: "post_2", postWrite: "고양이 없는사람 무슨낙으로 삼? ㅜ 불쌍 ㅜ",isLiked: false))

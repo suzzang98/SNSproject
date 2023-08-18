@@ -145,10 +145,18 @@
 				07E35DA12A8E152700FD7347 /* StoryTableViewCell.xib */,
 				07E35DA42A8E4E7400FD7347 /* InstaStory.storyboard */,
 				07E35DA62A8E4EF600FD7347 /* InstaStoryTableViewController.swift */,
-				07E35DAA2A8F1A7D00FD7347 /* DmTableViewController.swift */,
-				07E35DB42A8F914F00FD7347 /* DmWindow.storyboard */,
+				07E54D2D2A8FBFE700E3F147 /* DM */,
 			);
 			path = MainPageInsta;
+			sourceTree = "<group>";
+		};
+		07E54D2D2A8FBFE700E3F147 /* DM */ = {
+			isa = PBXGroup;
+			children = (
+				07E35DB42A8F914F00FD7347 /* DmWindow.storyboard */,
+				07E35DAA2A8F1A7D00FD7347 /* DmTableViewController.swift */,
+			);
+			path = DM;
 			sourceTree = "<group>";
 		};
 		1D5C239C2A8F8F70008E4ED3 /* MyPage */ = {
