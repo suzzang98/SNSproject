@@ -30,6 +30,7 @@ class MyPageCollectionViewCell1: UICollectionViewCell {
     private func configureUI() {
         contentView.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFill
         NSLayoutConstraint.activate([
             
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),

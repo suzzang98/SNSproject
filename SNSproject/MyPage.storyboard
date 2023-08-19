@@ -284,6 +284,7 @@
                             <constraint firstItem="E9t-Bk-Vis" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zk2-3U-jAD"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="person.crop.circle.fill" catalog="system" id="4mv-V0-VAp"/>
                     <navigationItem key="navigationItem" id="FKZ-dn-ms8"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -314,6 +315,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
