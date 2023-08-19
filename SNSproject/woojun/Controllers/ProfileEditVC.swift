@@ -77,7 +77,7 @@ class ProfileEditVC: UIViewController {
         leftImageView.clipsToBounds = true
         
         leftImageView.layer.cornerRadius = 45
-        leftImageView.image = UIImage(named: userInfoRepository.profilePhoto)
+        leftImageView.image = userInfoRepository.profilePhoto
         
     }
     
@@ -200,10 +200,11 @@ extension ProfileEditVC {
             }
             let image = items.singlePhoto?.image
             
-            let string = self.save(image: image!)
+//            let string = self.save(image: image!)
             
-            self.leftImageView.image = self.load(fileName: "FileName")
-            
+//            self.leftImageView.image = self.load(fileName: "FileName")
+            self.userInfoRepository.profilePhoto = image!
+            self.leftImageView.image = image
            
             
             

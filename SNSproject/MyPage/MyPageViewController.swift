@@ -22,11 +22,12 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
         collectionView.register(MyPageCollectionViewCell1.self, forCellWithReuseIdentifier: MyPageCollectionViewCell1.identifier)
         collectionView.dataSource = self
         collectionView.delegate = self
-    
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        collectionView.reloadData()
         navigationController?.navigationBar.isHidden = true
     }
     
@@ -60,7 +61,7 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         headerview.delegate = self
         
-        headerview.myPageProfileImage.image = UIImage(named: user.profilePhoto)
+        headerview.myPageProfileImage.image = user.profilePhoto
         headerview.name.text = user.name
         headerview.userName.text = user.userName
         headerview.bio.text = user.bio

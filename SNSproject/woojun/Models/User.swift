@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 struct User {
     
     var name: String
-    var profilePhoto: String = "default_profile"
+    var profilePhoto: UIImage = UIImage(named: "default_profile")!
     var userName: String
     var pronouns: String = ""
     var bio: String = ""
