@@ -271,6 +271,7 @@
                         <outlet property="Image4" destination="03n-yj-95u" id="gHn-VC-Snd"/>
                         <outlet property="ScrollStory" destination="Rte-AK-AJe" id="WG6-wH-2Ee"/>
                         <outlet property="StoryView" destination="9hK-cK-4UY" id="BU1-1q-7qU"/>
+                        <outlet property="label4" destination="zic-9g-6AM" id="1Ny-oV-YPw"/>
                         <outlet property="table" destination="6R1-zh-zWQ" id="SXb-Yt-7pL"/>
                     </connections>
                 </viewController>

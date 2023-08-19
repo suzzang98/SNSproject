@@ -20,6 +20,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var storyView: UIStackView!
     @IBOutlet weak var scrollStory: UIScrollView!
     
+    @IBOutlet var label4: UILabel!
     @IBAction func bttn(_ sender: UIButton) {
         let storyBoard = UIStoryboard(name: "InstaStory", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: "InstaStoryTableViewController") as! InstaStoryTableViewController
@@ -40,8 +41,18 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             navigationController?.pushViewController(vc, animated: true)
     }
     
+    private func setImageForSuhyun() {
+        let user = UserInfoRepository.shared
+        image4.image = user.profilePhoto
+        label4.text = user.userName
+        
+    }
     
     var models = [Post]()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setImageForSuhyun()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
