@@ -33,7 +33,10 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         let cell = searchCollectionView.dequeueReusableCell(withReuseIdentifier: SearchCell.identifier, for: indexPath) as! SearchCell
         
         let item = searchImage[indexPath.row]
-        cell.imageView.image = UIImage(named: item) ?? UIImage()
+        DispatchQueue.main.async {
+            cell.imageView.image = UIImage(named: item) ?? UIImage()
+        }
+        
 
         return cell
     }
