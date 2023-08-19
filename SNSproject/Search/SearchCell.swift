@@ -10,6 +10,8 @@ import UIKit
 class SearchCell: UICollectionViewCell {
     static let identifier = "SearchCell"
     
+    
+    
     let imageView: UIImageView = {
         let iv = UIImageView()
         iv.clipsToBounds = true
@@ -35,6 +37,15 @@ class SearchCell: UICollectionViewCell {
             imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
+    }
+    
+    func setImage(imageName: String) {
+        
+        DispatchQueue.main.async {
+            
+            self.imageView.image = UIImage(named: imageName)!
+        }
+        
     }
 }
 

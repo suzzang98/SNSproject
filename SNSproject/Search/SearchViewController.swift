@@ -34,7 +34,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         let item = searchImage[indexPath.row]
         DispatchQueue.main.async {
-            cell.imageView.image = UIImage(named: item) ?? UIImage()
+            cell.setImage(imageName: item)
         }
         
 
