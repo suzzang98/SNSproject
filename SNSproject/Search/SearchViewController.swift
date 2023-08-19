@@ -13,9 +13,15 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchCollectionView.register(SearchCollectionViewCell.self, forCellWithReuseIdentifier: "SearchCollectionViewCell")
-        print(searchImage)
-        // Do any additional setup after loading the view.
+        searchCollectionView.register(SearchCell.self, forCellWithReuseIdentifier: SearchCell.identifier)
+//        searchCollectionView.register(SearchCollectionReusableView.self, forCellWithReuseIdentifier: "SearchCollectionReusableView")
+        // 컴퓨터가 자동 설정하는 것을 막아줌
+        if let flowlayout = searchCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+        flowlayout.estimatedItemSize = .zero
+        }
+        searchCollectionView.dataSource = self
+        searchCollectionView.delegate = self
+
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -23,18 +29,20 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SearchCollectionViewCell", for: indexPath) as? SearchCollectionViewCell else { return  UICollectionViewCell() }
+//        searchCollectionView.register(SearchCell.self, forCellWithReuseIdentifier: SearchCell.identifier)
+        let cell = searchCollectionView.dequeueReusableCell(withReuseIdentifier: SearchCell.identifier, for: indexPath) as! SearchCell
+        
         let item = searchImage[indexPath.row]
-        cell.cellPhoto.image = UIImage(named: item) ?? UIImage()
+        cell.imageView.image = UIImage(named: item) ?? UIImage()
 
         return cell
     }
-//    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//
-//        let headerview = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchCollectionReusableView", for: indexPath) as! SearchCollectionReusableView
-//        return headerview
-//
-//    }
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+
+        let headerview = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchCollectionReusableView", for: indexPath) as! SearchCollectionReusableView
+        return headerview
+
+    }
 
     /*
     // MARK: - Navigation
@@ -53,10 +61,15 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+//            let interItemSpacing: CGFloat = 10
+//            let padding: CGFloat = 16
+//            let width = (searchCollectionView.bounds.width - interItemSpacing * 3 - padding * 2) / 3
+//            print(width)
+//            let height = width * 1.5
+//            return CGSize(width: width, height: height)
             let interval:CGFloat = 3
             let width: CGFloat = ( UIScreen.main.bounds.width - interval * 2 ) / 3
-        
+
             return CGSize(width: width , height: width )
     }
 

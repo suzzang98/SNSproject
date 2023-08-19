@@ -31,9 +31,9 @@
 		1D8B89DD2A89F09300F11510 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */; };
 		1D90CE2F2A8FB9010058A6F6 /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90CE2E2A8FB9010058A6F6 /* LanguageCell.swift */; };
 		1D90CE312A8FB9DD0058A6F6 /* SearchCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90CE302A8FB9DD0058A6F6 /* SearchCollectionReusableView.swift */; };
-		1D90CE332A8FB9EE0058A6F6 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90CE322A8FB9EE0058A6F6 /* SearchCollectionViewCell.swift */; };
 		1D90CE352A8FB9FE0058A6F6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90CE342A8FB9FE0058A6F6 /* SearchViewController.swift */; };
 		1D90CE382A908C310058A6F6 /* SearchPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90CE372A908C310058A6F6 /* SearchPost.swift */; };
+		1D90CE3C2A90D47A0058A6F6 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90CE3B2A90D47A0058A6F6 /* SearchCell.swift */; };
 		4CB21B57A5269C2A4034B1B2 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		557A4C652A8DBE8D00F217E4 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A4C642A8DBE8D00F217E4 /* TabbarController.swift */; };
 		557A4C692A8DBEF200F217E4 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A4C682A8DBEF200F217E4 /* AddPostViewController.swift */; };
@@ -91,9 +91,9 @@
 		1D8B89DC2A89F09300F11510 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		1D90CE2E2A8FB9010058A6F6 /* LanguageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
 		1D90CE302A8FB9DD0058A6F6 /* SearchCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionReusableView.swift; sourceTree = "<group>"; };
-		1D90CE322A8FB9EE0058A6F6 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		1D90CE342A8FB9FE0058A6F6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1D90CE372A908C310058A6F6 /* SearchPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPost.swift; sourceTree = "<group>"; };
+		1D90CE3B2A90D47A0058A6F6 /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		270A17E36733BAD285D5F7B8 /* Pods_SNSproject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSproject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAD466EBE071988FC71373C /* Pods-SNSproject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSproject.release.xcconfig"; path = "Target Support Files/Pods-SNSproject/Pods-SNSproject.release.xcconfig"; sourceTree = "<group>"; };
 		557A4C642A8DBE8D00F217E4 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				1D90CE342A8FB9FE0058A6F6 /* SearchViewController.swift */,
-				1D90CE322A8FB9EE0058A6F6 /* SearchCollectionViewCell.swift */,
+				1D90CE3B2A90D47A0058A6F6 /* SearchCell.swift */,
 				1D90CE302A8FB9DD0058A6F6 /* SearchCollectionReusableView.swift */,
 				1D90CE372A908C310058A6F6 /* SearchPost.swift */,
 			);
@@ -459,7 +459,6 @@
 			files = (
 				D6B6ADED2A8FA35B00EE5577 /* PronounsVC.swift in Sources */,
 				1D90CE312A8FB9DD0058A6F6 /* SearchCollectionReusableView.swift in Sources */,
-				1D90CE332A8FB9EE0058A6F6 /* SearchCollectionViewCell.swift in Sources */,
 				07E35DAC2A8F1A7D00FD7347 /* DmTableViewController.swift in Sources */,
 				D6804F4D2A8CBF0500F23E15 /* UserNameVC.swift in Sources */,
 				D6804F4C2A8CBF0500F23E15 /* ProfileEditVC.swift in Sources */,
@@ -470,6 +469,7 @@
 				1D8B89C42A89C11600F11510 /* ViewController.swift in Sources */,
 				1D90CE382A908C310058A6F6 /* SearchPost.swift in Sources */,
 				55D30D722A8A1B8200D84A82 /* (null) in Sources */,
+				1D90CE3C2A90D47A0058A6F6 /* SearchCell.swift in Sources */,
 				D6804F522A8CBF1000F23E15 /* User.swift in Sources */,
 				D6804F5F2A8CBFE300F23E15 /* SettingText.swift in Sources */,
 				1D5C239B2A8F0E15008E4ED3 /* MyPageCollectionReusableView.swift in Sources */,

@@ -11,5 +11,6 @@ var searchImage: [String] = [
     "samplePhoto1", "samplePhoto2", "samplePhoto3", "samplePhoto4",
     "samplePhoto5", "samplePhoto6", "samplePhoto7", "samplePhoto8",
     "samplePhoto9", "samplePhoto10", "samplePhoto11", "samplePhoto12",
-    "samplePhoto13"
+    "samplePhoto13", "samplePhoto1", "samplePhoto2", "samplePhoto3", "samplePhoto4",
+    "samplePhoto5", "samplePhoto6", "samplePhoto7", "samplePhoto8",
 ]
