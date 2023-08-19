@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Name View Controller-->
+        <!--User NameVC-->
         <scene sceneID="CPR-Ip-7gQ">
             <objects>
-                <viewController storyboardIdentifier="UserNameVC" id="574-TC-gr0" customClass="NameViewController" customModule="SNSproject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserNameVC" id="574-TC-gr0" customClass="UserNameVC" customModule="SNSproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ce7-kY-eEp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,8 +50,8 @@
                                             <constraint firstAttribute="height" constant="0.5" id="jPo-BM-SYx"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEs-zC-tTe">
-                                        <rect key="frame" x="15" y="8.6666666666666714" width="45" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEs-zC-tTe">
+                                        <rect key="frame" x="15" y="8.6666666666666714" width="78.333333333333329" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -102,15 +102,16 @@
                             <constraint firstItem="LjA-Id-MTl" firstAttribute="top" secondItem="kP3-W5-p33" secondAttribute="top" id="uqj-35-f87"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="imageTapped" destination="wNx-pO-2Pu" id="HPP-bs-K2q"/>
-                        <outlet property="lowerLabel" destination="FT7-0s-dJV" id="xjB-WU-Y8Z"/>
-                        <outlet property="textField" destination="6vT-dU-V6g" id="g11-7W-GL4"/>
+                        <outlet property="lowerLabel" destination="FT7-0s-dJV" id="iLv-aM-ps5"/>
+                        <outlet property="textField" destination="6vT-dU-V6g" id="OAc-iV-iPR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3F-Pf-qIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
+            <point key="canvasLocation" x="-158" y="-25"/>
         </scene>
     </scenes>
     <resources>

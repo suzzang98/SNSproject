@@ -124,7 +124,7 @@ extension MyPageViewController: myPageCollectionReusableViewDelegate {
     }
     
     func profileTapped() {
-        let storyBoard = UIStoryboard(name: "ProfileSB", bundle: nil)
+        let storyBoard = UIStoryboard(name: StoryBoardID.profile, bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "ProfileEditVC")
         vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)

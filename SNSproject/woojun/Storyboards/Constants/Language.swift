@@ -8,6 +8,13 @@
 import Foundation
 import UIKit
 
+enum StoryBoardID {
+    
+    static let name = "Name"
+    static let profile = "Profile"
+    static let userName = "UserName"
+}
+
 enum Language {
     
     static let languges = ["English", "Spanish", "Portuguese", "French", "German", "Indonesian", "Turkish", "Arabic", "Faris", "Norwegian", "Finnish", "Danish", "Swedish"]
@@ -20,6 +27,7 @@ enum CustomColor {
     static let middleBlue   = UIColor(red: 204/255, green: 229/255, blue: 255/255, alpha: 1)
     static let deepBlue     = UIColor(red: 102/255, green: 178/255, blue: 255/255, alpha: 1)
     static let gray         = UIColor(red: 150/255, green: 150/255, blue: 150/255, alpha: 1)
+    static let darkGray     = UIColor(red: 110/255, green: 110/255, blue: 110/255, alpha: 1)
 }
 
 enum Text {

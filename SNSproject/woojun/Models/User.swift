@@ -20,3 +20,4 @@ struct User {
     var following: Int = 0
     var postList: [Post] = []
 }
+
