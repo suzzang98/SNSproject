@@ -43,8 +43,9 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     // 어떤 셀을 보여줄 것인지
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyPageCollectionViewCell1.identifier, for: indexPath) as! MyPageCollectionViewCell1
-        print("Cell has been called")
-        cell.imageView.image = UIImage(named: reversedMyPost[indexPath.row].photo) ?? UIImage()
+        DispatchQueue.main.async {
+            cell.imageView.image = UIImage(named: self.reversedMyPost[indexPath.row].photo) ?? UIImage()
+        }
         return cell
     }
 
