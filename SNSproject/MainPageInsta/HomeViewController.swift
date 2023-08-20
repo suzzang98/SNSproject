@@ -37,7 +37,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func dmBtn(_ sender: UIButton) {
         
         let storyBoard = UIStoryboard(name: "DmWindow", bundle: nil)
-        let vc = storyBoard.instantiateViewController(identifier: "DmTableViewController") as! DmTableViewController
+        let vc = storyBoard.instantiateViewController(identifier: "DmViewController") as! DmViewController
         navigationController?.pushViewController(vc, animated: true)
     }
     
