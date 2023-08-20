@@ -15,7 +15,7 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     var user = UserInfoRepository.shared
     // 포스트 reverse 하는 코드
-    var reversedMyPost: [Post] = PostRepository.shared.getAllPosts()
+    var reversedMyPost: [Post] = UserInfoRepository.shared.postList
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,13 +27,15 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        reversedMyPost = UserInfoRepository.shared.postList
+        print(reversedMyPost.count)
         collectionView.reloadData()
-//        navigationController?.navigationBar.isHidden = true
+
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-//        navigationController?.navigationBar.isHidden = false
+
     }
 
     
@@ -45,7 +47,7 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyPageCollectionViewCell1.identifier, for: indexPath) as! MyPageCollectionViewCell1
         DispatchQueue.main.async {
-            cell.imageView.image =  self.reversedMyPost[indexPath.row].userProfileImage 
+            cell.imageView.image =  self.reversedMyPost[indexPath.row].contentImage
         }
         return cell
     }

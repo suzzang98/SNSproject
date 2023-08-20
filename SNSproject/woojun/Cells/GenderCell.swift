@@ -11,9 +11,7 @@ class GenderCell: UITableViewCell {
     
     //MARK: - Properties
     
-   
-    
-    static let identifier = "GenderCell"
+   static let identifier = "GenderCell"
     
     let label: UILabel = {
        let label = UILabel()

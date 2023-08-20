@@ -31,7 +31,7 @@ class PostRepository {
     }
     
     func addPost(post: Post) {
-        posts.append(post)
+        posts.insert(post, at: 0)
     }
     
     func removePost(post: Post) {

@@ -51,6 +51,7 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate {
                 guard let vc = storyboard.instantiateViewController(identifier: "AddPostViewController") as? AddPostViewController else { return }
                 
                 let homeViewcontroller = (self.viewControllers?.first as! UINavigationController).viewControllers.first as! HomeViewController
+                
                 vc.delegate = homeViewcontroller
                 
                 if let photo = items.singlePhoto {

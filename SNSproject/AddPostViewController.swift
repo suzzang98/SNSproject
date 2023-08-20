@@ -45,7 +45,9 @@ class AddPostViewController: UIViewController, UITextViewDelegate, UINavigationC
     @IBAction func addPost(_ sender: Any) {
 //        print(PostRepository.shared.getAllPosts().count, "Count")
         DispatchQueue.main.async {
-            PostRepository.shared.addPost(post: Post(id: UUID().uuidString, userProfileImage: UIImage(named: "suhyeon")!, contentImage: self.postImage.image! ,content: self.postText.text, uploadDate: Date()))
+            let post = Post(id: UUID().uuidString, userProfileImage: UIImage(named: "suhyeon")!, contentImage: self.postImage.image! ,content: self.postText.text, uploadDate: Date())
+            PostRepository.shared.addPost(post: post)
+            UserInfoRepository.shared.postList.insert(post, at: 0)
             self.delegate?.addPostTapped()
             self.dismiss(animated: true)
 //            print(self.presentingViewController)

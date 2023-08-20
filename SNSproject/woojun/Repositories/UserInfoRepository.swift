@@ -39,14 +39,7 @@ class UserInfoRepository {
     
     
     
-    //    init(user: User) {
-    //        self.name = user.name
-    //        self.userName = user.userName
-    //        self.pronouns = user.pronouns
-    //        self.bio = user.pronouns
-    //        self.links = user.links
-    //        self.gender = user.gender
-    //    }
+    
 }
 
 
