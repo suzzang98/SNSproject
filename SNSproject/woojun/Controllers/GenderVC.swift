@@ -149,3 +149,35 @@ class GenderVC: UIViewController {
 extension GenderVC: UITableViewDelegate {
     
 }
+
+
+//struct User {
+//
+//    var name: String
+//    var profilePhoto: UIImage = UIImage(named: "default_profile")!
+//    var userName: String
+//    var pronouns: String = ""
+//    var bio: String = ""
+//    var links: String = ""
+//    var gender: String = ""
+//    var follower: Int = 0 -> follower: [string(uuid, id)]
+//    var following: Int = 0 -> [uuid]
+//    var postList: [Post] = []
+//}
+//
+
+//struct Post: Equatable {
+//
+//    var id: String // uuid
+//    var photo: String // post image name -> uiimage
+//    var content: String // 내용
+//    var uploadDate: Date // 날짜
+//
+//    var isLiked: Bool = false
+//    var numberOfLikes: Int = 0
+//
+//    static func == (lhs: Post, rhs: Post) -> Bool {
+//        return lhs.id == rhs.id
+//    }
+//
+//}
