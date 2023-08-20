@@ -16,16 +16,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="azQ-PC-Z3A">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="azQ-PC-Z3A" id="ZnM-UI-DrY">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="mlx-2c-pjr">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="240"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hh-gY-FPR">
+                                    <rect key="frame" x="0.0" y="10" width="393" height="60"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="TW2-S2-SWk"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zef-iM-6MK">
+                                    <rect key="frame" x="0.0" y="70" width="393" height="100"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="f3s-6V-JPL"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Zef-iM-6MK" firstAttribute="leading" secondItem="mlx-2c-pjr" secondAttribute="leading" id="Elu-fW-mEn"/>
+                                <constraint firstItem="2hh-gY-FPR" firstAttribute="centerX" secondItem="mlx-2c-pjr" secondAttribute="centerX" id="O3k-LF-w0r"/>
+                                <constraint firstItem="2hh-gY-FPR" firstAttribute="top" secondItem="mlx-2c-pjr" secondAttribute="top" constant="10" id="QPc-Qx-Dsq"/>
+                                <constraint firstAttribute="trailing" secondItem="Zef-iM-6MK" secondAttribute="trailing" id="fpm-Fj-JXI"/>
+                                <constraint firstAttribute="trailing" secondItem="2hh-gY-FPR" secondAttribute="trailing" id="jqv-sg-SxU"/>
+                                <constraint firstItem="2hh-gY-FPR" firstAttribute="leading" secondItem="mlx-2c-pjr" secondAttribute="leading" id="oqr-cC-6Wb"/>
+                                <constraint firstItem="Zef-iM-6MK" firstAttribute="centerY" secondItem="mlx-2c-pjr" secondAttribute="centerY" id="rJU-TG-cVg"/>
+                                <constraint firstItem="Zef-iM-6MK" firstAttribute="top" secondItem="2hh-gY-FPR" secondAttribute="bottom" id="vVq-VZ-uRA"/>
+                            </constraints>
+                        </view>
                         <connections>
                             <outlet property="dataSource" destination="32b-S0-GGf" id="HUS-cn-xYU"/>
                             <outlet property="delegate" destination="32b-S0-GGf" id="D4Y-jB-LEc"/>
@@ -34,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etJ-ju-ikA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1468" y="37"/>
+            <point key="canvasLocation" x="-1469.4656488549617" y="36.619718309859159"/>
         </scene>
     </scenes>
     <resources>
