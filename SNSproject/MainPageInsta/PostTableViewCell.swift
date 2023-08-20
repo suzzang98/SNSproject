@@ -59,7 +59,7 @@ class PostTableViewCell: UITableViewCell {
         self.index = index
         self.likesLabel.text = "\(model.numberOfLikes) Likes"
         self.usernameLabel.text = "asdas"
-        self.userImageView.image = UIImage(named: model.photo)
+        self.userImageView.image = model.photo
         self.postImageView.image = UIImage()
         self.posting.text = model.content
     }

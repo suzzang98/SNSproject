@@ -25,6 +25,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="공유">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addPost:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8VI-xd-I2t"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="새 게시물" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUQ-cw-DHc">
                                 <rect key="frame" x="149" y="82" width="64" height="21"/>

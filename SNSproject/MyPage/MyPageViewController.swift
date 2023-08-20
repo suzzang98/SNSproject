@@ -45,7 +45,7 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyPageCollectionViewCell1.identifier, for: indexPath) as! MyPageCollectionViewCell1
         DispatchQueue.main.async {
-            cell.imageView.image = UIImage(named: self.reversedMyPost[indexPath.row].photo) ?? UIImage()
+            cell.imageView.image =  self.reversedMyPost[indexPath.row].photo 
         }
         return cell
     }
