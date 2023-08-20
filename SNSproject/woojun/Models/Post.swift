@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 struct Post: Equatable {
     
     var id: String // uuid
-    var photo: String // post image name
+    var photo: UIImage // post image name
     var content: String // 내용
     var uploadDate: Date // 날짜
     
