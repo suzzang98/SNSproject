@@ -40,6 +40,7 @@ class ProfileEditVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         configureTableView()
         configureImageView()
         addGesutreOnProfilePicture()
