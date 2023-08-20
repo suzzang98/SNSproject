@@ -73,16 +73,26 @@ class PronounsVC: UIViewController {
     
     //MARK: - Actions
     
+    @objc func rightBarButtonTapped(_ sender: UIBarButtonItem) {
+        UserInfoRepository.shared.pronouns = TFView.TextField.text!
+        navigationController?.popViewController(animated: true)
+    }
+    
     //MARK: - Helpers
     
     private func configureUI() {
         view.backgroundColor = .white
+        configureRightBarButton()
         configureTFView()
         configureCollectionView()
         configureUpperLabel()
         configureLabel()
         configureSwitch()
         configureLowerTextView()
+    }
+    
+    private func configureRightBarButton() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(rightBarButtonTapped(_:)))
     }
    
     private func configureTFView() {

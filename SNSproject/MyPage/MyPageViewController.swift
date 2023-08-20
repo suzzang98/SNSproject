@@ -22,11 +22,12 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
         collectionView.register(MyPageCollectionViewCell1.self, forCellWithReuseIdentifier: MyPageCollectionViewCell1.identifier)
         collectionView.dataSource = self
         collectionView.delegate = self
-    
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        collectionView.reloadData()
         navigationController?.navigationBar.isHidden = true
     }
     
@@ -43,8 +44,9 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
     // 어떤 셀을 보여줄 것인지
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyPageCollectionViewCell1.identifier, for: indexPath) as! MyPageCollectionViewCell1
-        print("Cell has been called")
-        cell.imageView.image = UIImage(named: reversedMyPost[indexPath.row].photo) ?? UIImage()
+        DispatchQueue.main.async {
+            cell.imageView.image = UIImage(named: self.reversedMyPost[indexPath.row].photo) ?? UIImage()
+        }
         return cell
     }
 
@@ -59,7 +61,7 @@ class MyPageViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         headerview.delegate = self
         
-        headerview.myPageProfileImage.image = UIImage(named: user.profilePhoto)
+        headerview.myPageProfileImage.image = user.profilePhoto
         headerview.name.text = user.name
         headerview.userName.text = user.userName
         headerview.bio.text = user.bio
@@ -124,7 +126,7 @@ extension MyPageViewController: myPageCollectionReusableViewDelegate {
     }
     
     func profileTapped() {
-        let storyBoard = UIStoryboard(name: "ProfileSB", bundle: nil)
+        let storyBoard = UIStoryboard(name: StoryBoardID.profile, bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "ProfileEditVC")
         vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)

@@ -36,7 +36,8 @@ class BioVC: UIViewController {
     }
     
     @objc func tapped() {
-        print("tapped")
+        UserInfoRepository.shared.bio = textView.text!
+        navigationController?.popViewController(animated: true)
     }
     
     private func configureUI() {
@@ -53,7 +54,7 @@ class BioVC: UIViewController {
             textView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
             textView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            textView.heightAnchor.constraint(equalToConstant: 35)
+            textView.heightAnchor.constraint(equalToConstant: 37.66)
             
         ])
     }
@@ -89,14 +90,13 @@ class BioVC: UIViewController {
 extension BioVC: UITextViewDelegate {
     
     func textViewDidChange(_ textView: UITextView) {
-           
+        print(textView.frame.height)
            let size = CGSize(width: view.frame.width, height: .infinity)
            let estimatedSize = textView.sizeThatFits(size)
            
            textView.constraints.forEach { (constraint) in
            
-             /// 180 이하일때는 더 이상 줄어들지 않게하기
-               if estimatedSize.height <= 35 {
+               if estimatedSize.height <= 37.66 {
                
                }
                else {

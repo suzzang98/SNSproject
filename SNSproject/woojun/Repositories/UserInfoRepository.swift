@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class UserInfoRepository {
     
@@ -17,7 +18,7 @@ class UserInfoRepository {
     var bio: String = "안녕하세요 이수현의 계정입니다."
     var links: String = ""
     var gender: String = ""
-    var profilePhoto: String = "default_profile"
+    var profilePhoto: UIImage = UIImage(named: "default_profile")!
     var postList: [Post] = [Post(id: UUID().uuidString, photo: "samplePhoto1", content: "샘플 사진1 입니다.", uploadDate: Date()),
                             Post(id: UUID().uuidString, photo: "samplePhoto2", content: "샘플 사진2 입니다.", uploadDate: Date()),
                             Post(id: UUID().uuidString, photo: "samplePhoto3", content: "샘플 사진3 입니다.", uploadDate: Date()),

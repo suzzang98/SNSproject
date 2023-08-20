@@ -18,10 +18,10 @@
             </objects>
             <point key="canvasLocation" x="-115" y="277"/>
         </scene>
-        <!--HomeViewController-->
+        <!--Home-->
         <scene sceneID="TX6-Wc-IBw">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" referencedIdentifier="HomeViewController" id="WBA-qs-444" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" id="WBA-qs-444" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Udt-I1-qDD"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVb-rX-c8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -58,6 +58,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemBrownColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="WBA-qs-444" kind="relationship" relationship="viewControllers" id="6JO-iZ-1zc"/>
