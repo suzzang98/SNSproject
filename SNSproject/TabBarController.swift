@@ -47,13 +47,14 @@ class TabbarController: UITabBarController, UITabBarControllerDelegate {
                 // 사진 선택창 닫기
                 picker.dismiss(animated: true, completion: nil)
                 
-                let AddPostViewController = AddPostViewController()
                 let storyboard = UIStoryboard(name: "AddPost", bundle: nil)
+                guard let vc = storyboard.instantiateViewController(identifier: "AddPostViewController") as? AddPostViewController else { return }
                 
-                guard let vc = storyboard.instantiateViewController(identifier: "AddPostViewController") as? AddPostViewController else{return}
+                let homeViewcontroller = (self.viewControllers?.first as! UINavigationController).viewControllers.first as! HomeViewController
+                vc.delegate = homeViewcontroller
                 
                 if let photo = items.singlePhoto {
-                    print(photo,"31223131231232")
+                    
                     vc.myPhoto = photo.image
                     self.present(vc, animated: true)
                 }

@@ -11,7 +11,8 @@ import UIKit
 struct Post: Equatable {
     
     var id: String // uuid
-    var photo: UIImage // post image name
+    var userProfileImage: UIImage // post image name
+    var contentImage: UIImage
     var content: String // 내용
     var uploadDate: Date // 날짜
     

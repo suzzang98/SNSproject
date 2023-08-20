@@ -7,8 +7,14 @@
 
 import UIKit
 
+protocol AddPostViewControllerDelegate: AnyObject {
+    func addPostTapped()
+}
+
 class AddPostViewController: UIViewController, UITextViewDelegate, UINavigationControllerDelegate {
     var myPhoto : UIImage!
+    
+    weak var delegate: AddPostViewControllerDelegate?
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var PostButton: UIButton!
     @IBOutlet weak var postText: UITextView!
@@ -37,8 +43,21 @@ class AddPostViewController: UIViewController, UITextViewDelegate, UINavigationC
         self.present(imagePicker, animated: true, completion: nil)
     }
     @IBAction func addPost(_ sender: Any) {
-        PostRepository.shared.addPost(post: Post(id: UUID().uuidString, photo: myPhoto, content: postText.text, uploadDate: Date()))
-        self.dismiss(animated: true)
+//        print(PostRepository.shared.getAllPosts().count, "Count")
+        DispatchQueue.main.async {
+            PostRepository.shared.addPost(post: Post(id: UUID().uuidString, userProfileImage: UIImage(named: "suhyeon")!, contentImage: self.postImage.image! ,content: self.postText.text, uploadDate: Date()))
+            self.delegate?.addPostTapped()
+            self.dismiss(animated: true)
+//            print(self.presentingViewController)
+            
+//            self.dismiss(animated: true) {
+//                let vc = self.presentingViewController as! HomeViewController
+//                vc.table.reloadData()
+//            }
+        }
+        
+//        print(PostRepository.shared.getAllPosts().count, "Count")
+        
     }
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(animated: true)

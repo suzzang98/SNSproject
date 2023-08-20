@@ -10,6 +10,7 @@ import UIKit
 
 protocol PostCellDelegate {
     func likeButtonTapped(index: Int)
+    func nameLabelTapped()
 }
 
 
@@ -59,9 +60,22 @@ class PostTableViewCell: UITableViewCell {
         self.index = index
         self.likesLabel.text = "\(model.numberOfLikes) Likes"
         self.usernameLabel.text = "asdas"
-        self.userImageView.image = model.photo
-        self.postImageView.image = UIImage()
+        self.userImageView.image = model.userProfileImage
+        self.postImageView.image = model.contentImage
         self.posting.text = model.content
+        addGestureOnUserNameLabel()
+    }
+    
+    @objc private func userNameLabelTapped(_ sender: UITapGestureRecognizer) {
+        delegate?.nameLabelTapped()
+
+        
+    }
+    
+    private func addGestureOnUserNameLabel() {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(userNameLabelTapped(_:)))
+        usernameLabel.addGestureRecognizer(gesture)
+        usernameLabel.isUserInteractionEnabled = true
     }
     
     

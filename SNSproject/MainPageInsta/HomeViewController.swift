@@ -12,7 +12,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBOutlet var table: UITableView!
-
+    
     @IBOutlet weak var image1: UIImageView!
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
@@ -25,7 +25,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let storyBoard = UIStoryboard(name: "InstaStory", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: "InstaStoryTableViewController") as! InstaStoryTableViewController
         navigationController?.pushViewController(vc, animated: true)
-                
+        
     }
     
     @IBAction func bttn2(_ sender: UIButton) {
@@ -36,9 +36,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func dmBtn(_ sender: UIButton) {
         
-            let storyBoard = UIStoryboard(name: "DmWindow", bundle: nil)
-            let vc = storyBoard.instantiateViewController(identifier: "DmTableViewController") as! DmTableViewController
-            navigationController?.pushViewController(vc, animated: true)
+        let storyBoard = UIStoryboard(name: "DmWindow", bundle: nil)
+        let vc = storyBoard.instantiateViewController(identifier: "DmTableViewController") as! DmTableViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     private func setImageForSuhyun() {
@@ -48,10 +48,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    var models = [Post]()
+    var models: [Post] = PostRepository.shared.getAllPosts()
     
     override func viewWillAppear(_ animated: Bool) {
+        print("@#$@#$@#$@#$@#$@#$@#$@#$@#$@#")
         setImageForSuhyun()
+        models = PostRepository.shared.getAllPosts()
+        for item in models {
+            print(item.content)
+        }
+        table.reloadData()
     }
     
     override func viewDidLoad() {
@@ -65,22 +71,22 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         table.delegate = self
         table.dataSource = self
         
-        models.append(Post(id: "0", photo: UIImage(named:"suhyeon")!, content: "우리집 고냥이❤️", uploadDate: Date()))
-        models.append(Post(id: "1", photo: UIImage(named:"gagyeom")!, content: "고양이 없는사람 무슨낙으로 삼? ㅜ 불쌍 ㅜ", uploadDate: Date()))
-        models.append(Post(id: "2", photo: UIImage(named:"woojun")!, content: "아웅 기여어😙", uploadDate: Date()))
-        models.append(Post(id: "3", photo: UIImage(named:"kiho")!, content: "나만 없어 ... 고양이 ....", uploadDate: Date()))
+//        models.append(Post(id: "0", photo: UIImage(named:"suhyeon")!, content: "우리집 고냥이❤️", uploadDate: Date()))
+//        models.append(Post(id: "1", photo: UIImage(named:"gagyeom")!, content: "고양이 없는사람 무슨낙으로 삼? ㅜ 불쌍 ㅜ", uploadDate: Date()))
+//        models.append(Post(id: "2", photo: UIImage(named:"woojun")!, content: "아웅 기여어😙", uploadDate: Date()))
+//        models.append(Post(id: "3", photo: UIImage(named:"kiho")!, content: "나만 없어 ... 고양이 ....", uploadDate: Date()))
         
-//        models.append(Post(numberOfLikes: 0, username: "su_hyeon_47", userImageName: "suhyeon", postImageName: "post_1", postWrite: "우리집 고냥이❤️",isLiked: false))
-//        models.append(Post(numberOfLikes: 0, username: "ga_g_yeom__", userImageName: "gagyeom", postImageName: "post_2", postWrite: "고양이 없는사람 무슨낙으로 삼? ㅜ 불쌍 ㅜ",isLiked: false))
-//        models.append(Post(numberOfLikes: 0, username: "woo8jun2", userImageName: "woojun", postImageName: "post_3", postWrite: "아웅 기여어😙",isLiked: false))
-//        models.append(Post(numberOfLikes: 0, username: "k111h00o", userImageName: "kiho", postImageName: "post_4", postWrite: "나만 없어 ... 고양이 ....",isLiked: false))
-                
+        //        models.append(Post(numberOfLikes: 0, username: "su_hyeon_47", userImageName: "suhyeon", postImageName: "post_1", postWrite: "우리집 고냥이❤️",isLiked: false))
+        //        models.append(Post(numberOfLikes: 0, username: "ga_g_yeom__", userImageName: "gagyeom", postImageName: "post_2", postWrite: "고양이 없는사람 무슨낙으로 삼? ㅜ 불쌍 ㅜ",isLiked: false))
+        //        models.append(Post(numberOfLikes: 0, username: "woo8jun2", userImageName: "woojun", postImageName: "post_3", postWrite: "아웅 기여어😙",isLiked: false))
+        //        models.append(Post(numberOfLikes: 0, username: "k111h00o", userImageName: "kiho", postImageName: "post_4", postWrite: "나만 없어 ... 고양이 ....",isLiked: false))
+        
     }
     
     @objc private func didDoubleTap(_gesture: UITapGestureRecognizer){
         
     }
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -110,6 +116,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 }
 
 extension HomeViewController:PostCellDelegate{
+    func nameLabelTapped() {
+        let storyBoard = UIStoryboard(name: "MyPage", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "MyPageViewController")
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func likeButtonTapped(index: Int) {
         models[index].isLiked = !models[index].isLiked
         table.reloadData()
@@ -124,4 +136,14 @@ struct InstagramPost{
     let postImageName:String
     let postWrite:String
     var isLiked:Bool
+}
+
+extension HomeViewController: AddPostViewControllerDelegate {
+    func addPostTapped() {
+        models = PostRepository.shared.getAllPosts()
+        
+        table.reloadData()
+    }
+    
+    
 }

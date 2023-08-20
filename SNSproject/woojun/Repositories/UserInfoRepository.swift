@@ -19,16 +19,16 @@ class UserInfoRepository {
     var links: String = ""
     var gender: String = ""
     var profilePhoto: UIImage = UIImage(named: "default_profile")!
-    var postList: [Post] = [Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto1")!, content: "샘플 사진1 입니다.", uploadDate: Date()),
-                            Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto2")!, content: "샘플 사진2 입니다.", uploadDate: Date()),
-                            Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
-                            Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
-                            Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
-                            Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto1")!, content: "샘플 사진1 입니다.", uploadDate: Date()),
-                            Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto2")!, content: "샘플 사진2 입니다.", uploadDate: Date()),
-                            Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
-                            Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
-                            Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date())
+    var postList: [Post] = [Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto1")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진1 입니다.", uploadDate: Date()),
+                            Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto2")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진2 입니다.", uploadDate: Date()),
+                            Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
+                            Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
+                            Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
+                            Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto1")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진1 입니다.", uploadDate: Date()),
+                            Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto2")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진2 입니다.", uploadDate: Date()),
+                            Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
+                            Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
+                            Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date())
     ]
     var follower: Int = 450
     var following: Int = 200

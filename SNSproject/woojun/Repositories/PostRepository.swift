@@ -10,16 +10,16 @@ import UIKit
 
 class PostRepository {
     
-    private var posts: [Post] = [Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto1")!, content: "샘플 사진1 입니다.", uploadDate: Date()),
-                                 Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto2")!, content: "샘플 사진2 입니다.", uploadDate: Date()),
-                                 Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
-                                 Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
-                                 Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
-                                 Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto1")!, content: "샘플 사진1 입니다.", uploadDate: Date()),
-                                 Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto2")!, content: "샘플 사진2 입니다.", uploadDate: Date()),
-                                 Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
-                                 Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
-                                 Post(id: UUID().uuidString, photo: UIImage(named:"samplePhoto3")!, content: "샘플 사진3 입니다.", uploadDate: Date())
+    private var posts: [Post] = [Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto1")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진1 입니다.", uploadDate: Date()),
+                                 Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto2")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진2 입니다.", uploadDate: Date()),
+                                 Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
+                                 Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
+                                 Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
+                                 Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto1")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진1 입니다.", uploadDate: Date()),
+                                 Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto2")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진2 입니다.", uploadDate: Date()),
+                                 Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
+                                 Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date()),
+                                 Post(id: UUID().uuidString, userProfileImage: UIImage(named:"samplePhoto3")!, contentImage: UIImage(named: "post_4")!, content: "샘플 사진3 입니다.", uploadDate: Date())
     ]
     
     static let shared = PostRepository()
