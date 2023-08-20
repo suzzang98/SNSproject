@@ -14,8 +14,10 @@
 		07E35DA32A8E152700FD7347 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E35DA12A8E152700FD7347 /* StoryTableViewCell.xib */; };
 		07E35DA52A8E4E7400FD7347 /* InstaStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E35DA42A8E4E7400FD7347 /* InstaStory.storyboard */; };
 		07E35DA82A8E4EF600FD7347 /* InstaStoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E35DA62A8E4EF600FD7347 /* InstaStoryTableViewController.swift */; };
-		07E35DAC2A8F1A7D00FD7347 /* DmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E35DAA2A8F1A7D00FD7347 /* DmTableViewController.swift */; };
 		07E35DB52A8F914F00FD7347 /* DmWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E35DB42A8F914F00FD7347 /* DmWindow.storyboard */; };
+		07E54D302A91C25A00E3F147 /* DmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E54D2E2A91C25A00E3F147 /* DmTableViewCell.swift */; };
+		07E54D312A91C25A00E3F147 /* DmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E54D2F2A91C25A00E3F147 /* DmTableViewCell.xib */; };
+		07E54D332A91DA9300E3F147 /* DmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E54D322A91DA9300E3F147 /* DmViewController.swift */; };
 		1D5C239B2A8F0E15008E4ED3 /* MyPageCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C239A2A8F0E15008E4ED3 /* MyPageCollectionReusableView.swift */; };
 		1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89BF2A89C11600F11510 /* AppDelegate.swift */; };
 		1D8B89C22A89C11600F11510 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B89C12A89C11600F11510 /* SceneDelegate.swift */; };
@@ -74,8 +76,10 @@
 		07E35DA12A8E152700FD7347 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		07E35DA42A8E4E7400FD7347 /* InstaStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstaStory.storyboard; sourceTree = "<group>"; };
 		07E35DA62A8E4EF600FD7347 /* InstaStoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaStoryTableViewController.swift; sourceTree = "<group>"; };
-		07E35DAA2A8F1A7D00FD7347 /* DmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmTableViewController.swift; sourceTree = "<group>"; };
 		07E35DB42A8F914F00FD7347 /* DmWindow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DmWindow.storyboard; sourceTree = "<group>"; };
+		07E54D2E2A91C25A00E3F147 /* DmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmTableViewCell.swift; sourceTree = "<group>"; };
+		07E54D2F2A91C25A00E3F147 /* DmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DmTableViewCell.xib; sourceTree = "<group>"; };
+		07E54D322A91DA9300E3F147 /* DmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DmViewController.swift; sourceTree = "<group>"; };
 		1D5C239A2A8F0E15008E4ED3 /* MyPageCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCollectionReusableView.swift; sourceTree = "<group>"; };
 		1D8B89BC2A89C11600F11510 /* SNSproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8B89BF2A89C11600F11510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,7 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				07E35DB42A8F914F00FD7347 /* DmWindow.storyboard */,
-				07E35DAA2A8F1A7D00FD7347 /* DmTableViewController.swift */,
+				07E54D322A91DA9300E3F147 /* DmViewController.swift */,
+				07E54D2E2A91C25A00E3F147 /* DmTableViewCell.swift */,
+				07E54D2F2A91C25A00E3F147 /* DmTableViewCell.xib */,
 			);
 			path = DM;
 			sourceTree = "<group>";
@@ -402,6 +408,7 @@
 				D6804F452A8CBEF400F23E15 /* UserName.storyboard in Resources */,
 				1D8B89D82A89C3D900F11510 /* MyPage.storyboard in Resources */,
 				07E35DB52A8F914F00FD7347 /* DmWindow.storyboard in Resources */,
+				07E54D312A91C25A00E3F147 /* DmTableViewCell.xib in Resources */,
 				1D8B89C92A89C11700F11510 /* Assets.xcassets in Resources */,
 				1D8B89D62A89C3C600F11510 /* AddPost.storyboard in Resources */,
 				D6804F472A8CBEF400F23E15 /* Profile.storyboard in Resources */,
@@ -465,7 +472,7 @@
 			files = (
 				D6B6ADED2A8FA35B00EE5577 /* PronounsVC.swift in Sources */,
 				1D90CE312A8FB9DD0058A6F6 /* SearchCollectionReusableView.swift in Sources */,
-				07E35DAC2A8F1A7D00FD7347 /* DmTableViewController.swift in Sources */,
+				07E54D302A91C25A00E3F147 /* DmTableViewCell.swift in Sources */,
 				D6804F4D2A8CBF0500F23E15 /* UserNameVC.swift in Sources */,
 				D6804F4C2A8CBF0500F23E15 /* ProfileEditVC.swift in Sources */,
 				D6804F4E2A8CBF0500F23E15 /* NameViewController.swift in Sources */,
@@ -481,6 +488,7 @@
 				1D5C239B2A8F0E15008E4ED3 /* MyPageCollectionReusableView.swift in Sources */,
 				D6B6ADF82A904F9900EE5577 /* RoundCheckView.swift in Sources */,
 				D6804F612A8CBFE300F23E15 /* Edit.swift in Sources */,
+				07E54D332A91DA9300E3F147 /* DmViewController.swift in Sources */,
 				D6804F632A8CCC3900F23E15 /* MyPageCollectionViewCell1.swift in Sources */,
 				1D8B89C02A89C11600F11510 /* AppDelegate.swift in Sources */,
 				07E35DA82A8E4EF600FD7347 /* InstaStoryTableViewController.swift in Sources */,
